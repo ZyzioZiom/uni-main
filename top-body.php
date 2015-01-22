@@ -31,11 +31,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
       <ul class="nav navbar-nav navbar-right">
+        <li style="background: #B9121B" ><a href="signup.php"><strong><span style="color: white;">ZAPISZ SIĘ</span></strong></a></li>
         <li><a href="harmonogram.php">HARMONOGRAM</a></li>
         <li><a href="news.php">AKTUALNOŚCI</a></li>
         <li><a href="prices.php">CENNIK</a></li>
         <li><a href="about.php">O WARSZTATACH</a></li>
-        <li><a href="signup.php">ZAPISZ SIĘ</a></li>
+        <li><a href="https://www.facebook.com/lckrakow" target="_blank"><img src="img/FB-f-Logo__blue_100.png" style="height: 20px;" /></a></li>
+        
         
         </ul>  
     </div><!-- /.navbar-collapse -->

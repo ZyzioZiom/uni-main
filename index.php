@@ -115,8 +115,9 @@
           <li id="point3" class="point">elastyczny grafik</li>
           <li id="point4" class="point">poznawanie kultury kraju</li>
           <li id="point5" class="point">wspólne wyjścia na miasto</li>
+          <li id="point6" class="point">zajęcia w samym centrum (kampus Uniwersytetu Ekonomicznego)</li>
           <br/>
-          <li id="point6" class="point">zajęcia grupowe i indywidualne<br/>dwa razy w tygodniu po 1,5 godziny</li>
+          <li id="point7" class="point">zajęcia grupowe i indywidualne<br/>dwa razy w tygodniu po 1,5 godziny</li>
 
      
     </div>
