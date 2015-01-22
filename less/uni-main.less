@@ -1,0 +1,30 @@
+// Uni main styling and positioning
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px; // so navbar does not overlay content
+  // use alegreya font on whole website
+  .alegreyaregular;
+  
+  background: url(../img/bg-sm.jpg) #fff top center;
+  background-size: cover;
+    @media (min-width: @screen-sm-min) {
+      background: url(../img/bg.jpg) #fff top center;
+    }
+}
+
+// hide scrollbar
+::-webkit-scrollbar { 
+    //display: none; 
+}
+// div centering
+.centered {
+  float: none;
+  margin: 0 auto;
+}

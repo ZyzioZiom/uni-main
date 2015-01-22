@@ -1,0 +1,25 @@
+/* UNI Main */
+/* 
+
+*/ 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+// div centering
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ccc top center no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+}
