@@ -21,14 +21,26 @@ $attended = $_POST["attended"];
 //$landingpage_version = $_POST["landingpage_version"];
 
 // set proper amount to pay
+
+// set discount for person who attended before
+$amountWhenAttended = 0.9;
+
+function applyDiscount(&$amount, $attended, $amountWhenAttended) { // "&" is to modify variable value out of function
+  if($attended == 1) {
+    $amount *= $amountWhenAttended;
+  }
+}
 // if language is set to individual classes (category values)
 $languagesInd = array(5,11,17,23,29,35,36);
-if (in_array(intval($languages), $languagesInd)) {
-  $amount = 350;
+if(in_array(intval($languages), $languagesInd)) {
+  $amount = 359;
+  applyDiscount($amount, $attended, $amountWhenAttended);
 }
 else { // set amount for group classes
   $amount = 199;
+  applyDiscount($amount, $attended, $amountWhenAttended);
 }
+
 
 // tutaj podmienić na cookies
 $utm_source = $_POST["utm_source"];
@@ -87,20 +99,7 @@ $item->fields["languages"]->add_value(intval($languages));
 // set paid to NO
 $item->fields["paid"]->add_value(2);
 
-/*
-// if !empty doesnt work, if array is empty chrome console prints error
-if (!empty($languages)) {
-  // go through created array of selected languages
-  foreach ($languages as $language) {
-  // add checked language value as category id in Podio
-   $item->fields["languages"]->add_value(intval($language)); // intval, because $language number is stored in array as string
 
-  // here the code to sent event to analytics
-  }
-}
-else {
-}
-*/
 // Save the new item
 $item->save();
 

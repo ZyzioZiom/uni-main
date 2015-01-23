@@ -46,11 +46,11 @@ require_once "config.php";
 require_once 'podio-php-4.0.2/PodioAPI.php';
 
 // authenticate client to Podio
-Podio::setup($gh_client_id, $gh_client_secret);
+Podio::setup($news_client_id, $news_client_secret);
 
 // authenticate client to app
 try {
-  Podio::authenticate_with_app($gh_app_id, $gh_app_token);
+  Podio::authenticate_with_app($news_app_id, $news_app_token);
   // Authentication was a success, now you can start making API calls.
 }
 catch (PodioError $e) {
@@ -61,8 +61,8 @@ catch (PodioError $e) {
 
 // Get sticky items first (sticky=1) and other items after (sticky=2)
 for ($sticky=1; $sticky < 3; $sticky++) {
-  // Get items from app with gh_app_id
-  $collection = PodioItem::filter($gh_app_id, array(
+  // Get items from app with news_app_id
+  $collection = PodioItem::filter($news_app_id, array(
 	"sort_by" => "last_edit_on", // sort items by last edited (newest first)
 	"sort_desc" => true,
 	"filters" => array(
@@ -110,7 +110,7 @@ foreach ($collection as $item) {
   print "<p>".$opis->values."</p>";
 
 /*
-$files = PodioItem::filter($gh_app_id, array(
+$files = PodioItem::filter($news_app_id, array(
 	"filters" => array(
 		"item_id" => $item->item_id,
 		)), 
@@ -123,7 +123,7 @@ foreach ($files as $file) {
 /*
 // get app files
 // SHOWS FILE FOR ALL APP AND ALL ITEMS
-$files = PodioFile::get_for_app($gh_app_id);
+$files = PodioFile::get_for_app($news_app_id);
 
 if (!empty($files)) {
 	print "<p>Do pobrania:</p>";

@@ -32,9 +32,11 @@
 
       <div id="content" class="row alegreyabold">
       <div class="col-md-10 centered">
+         <div class="text-center"><img id="logo" class="text-center" src="img/logo.png" style="width:300px; margin: 0 auto;" /></div>
+      <br/>
         <h1 class="text-center">Wypełnij formularz już teraz i zapisz się na warsztaty</h1>
         <h2 class="text-center">Liczba miejsc ograniczona!</h2>
-        
+        <br/>
         <div class="col-md-6 centered">
         <form id="form" class="form" enctype="multipart/form-data">
 
@@ -203,51 +205,53 @@
           <label id="" class="language-level-radio" for="italianInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
         </div>  
                  
-
-        <!-- Spanish -->
-        <div id="languageSpanishDiv" class="LanguageDiv">
-            
-        <input type="radio" id="spanishA1" class="language-level-radio spanish-radio" name="language" value="24" >
-          <label id="" class="language-level-radio" for="spanishA1">A1 Beginner</label><br/>
-
-        <input type="radio" id="spanishA2" class="language-level-radio spanish-radio" name="language" value="25">
-          <label id="" class="language-level-radio" for="spanishA2">A2 Pre-intermediate</label><br/>
-
-        <input type="radio" id="spanishB1" class="language-level-radio spanish-radio" name="language" value="26">
-          <label id="" class="language-level-radio" for="spanishB1">B1 Intermediate</label><br/>
-          
-        <input type="radio" id="spanishB2" class="language-level-radio spanish-radio" name="language" value="27">
-          <label id="" class="language-level-radio" for="spanishB2">B2 Upper-intermediate</label><br/>  
-
-        <input type="radio" id="spanishC1" class="language-level-radio spanish-radio" name="language" value="28">
-          <label id="" class="language-level-radio" for="spanishC1">C1 Advanced</label><br/>  
-
-        <input type="radio" id="spanishInd" class="language-level-radio spanish-radio" name="language" value="29">
-          <label id="" class="language-level-radio" for="spanishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
-        </div>
-                 
+       
 
         <!-- Russian -->
         <div id="languageRussianDiv" class="LanguageDiv">
           
-        <input type="radio" id="russianA1" class="language-level-radio russian-radio" name="language" value="30" >
+        <input type="radio" id="russianA1" class="language-level-radio russian-radio" name="language" value="24" >
           <label id="" class="language-level-radio" for="russianA1">A1 Beginner</label><br/>
 
-        <input type="radio" id="russianA2" class="language-level-radio russian-radio" name="language" value="31">
+        <input type="radio" id="russianA2" class="language-level-radio russian-radio" name="language" value="25">
           <label id="" class="language-level-radio" for="russianA2">A2 Pre-intermediate</label><br/>
 
-        <input type="radio" id="russianB1" class="language-level-radio russian-radio" name="language" value="32">
+        <input type="radio" id="russianB1" class="language-level-radio russian-radio" name="language" value="26">
           <label id="" class="language-level-radio" for="russianB1">B1 Intermediate</label><br/>
           
-        <input type="radio" id="russianB2" class="language-level-radio russian-radio" name="language" value="33">
+        <input type="radio" id="russianB2" class="language-level-radio russian-radio" name="language" value="27">
           <label id="" class="language-level-radio" for="russianB2">B2 Upper-intermediate</label><br/>  
 
-        <input type="radio" id="russianC1" class="language-level-radio russian-radio" name="language" value="34">
+        <input type="radio" id="russianC1" class="language-level-radio russian-radio" name="language" value="28">
           <label id="" class="language-level-radio" for="russianC1">C1 Advanced</label><br/>  
 
-        <input type="radio" id="russianInd" class="language-level-radio russian-radio" name="language" value="35">
+        <input type="radio" id="russianInd" class="language-level-radio russian-radio" name="language" value="29">
           <label id="" class="language-level-radio" for="russianInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
-        </div>    
+        </div> 
+          
+          
+        <!-- Spanish -->
+        <div id="languageSpanishDiv" class="LanguageDiv">
+            
+        <input type="radio" id="spanishA1" class="language-level-radio spanish-radio" name="language" value="30" >
+          <label id="" class="language-level-radio" for="spanishA1">A1 Beginner</label><br/>
+
+        <input type="radio" id="spanishA2" class="language-level-radio spanish-radio" name="language" value="31">
+          <label id="" class="language-level-radio" for="spanishA2">A2 Pre-intermediate</label><br/>
+
+        <input type="radio" id="spanishB1" class="language-level-radio spanish-radio" name="language" value="32">
+          <label id="" class="language-level-radio" for="spanishB1">B1 Intermediate</label><br/>
+          
+        <input type="radio" id="spanishB2" class="language-level-radio spanish-radio" name="language" value="33">
+          <label id="" class="language-level-radio" for="spanishB2">B2 Upper-intermediate</label><br/>  
+
+        <input type="radio" id="spanishC1" class="language-level-radio spanish-radio" name="language" value="34">
+          <label id="" class="language-level-radio" for="spanishC1">C1 Advanced</label><br/>  
+
+        <input type="radio" id="spanishInd" class="language-level-radio spanish-radio" name="language" value="35">
+          <label id="" class="language-level-radio" for="spanishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
+        </div>
+             
                  
 
         <!-- Arabic -->
