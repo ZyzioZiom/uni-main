@@ -75,6 +75,7 @@ for ($sticky=1; $sticky < 3; $sticky++) {
 foreach ($collection as $item) {
   print '<div class="row">
           <div class="col-md-10 centered news-item">';
+  
   // print title
   print "<h1>".$item->title."</h1>";
   // print date of creation
@@ -107,7 +108,9 @@ foreach ($collection as $item) {
   $opis = $item->fields["opis"];
 	
   // print the value of $opis variable
+  if (!empty($opis)) {
   print "<p>".$opis->values."</p>";
+  }
 
 /*
 $files = PodioItem::filter($news_app_id, array(

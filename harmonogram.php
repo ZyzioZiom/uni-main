@@ -92,13 +92,19 @@ foreach ($collection as $item) {
   echo '<div class="row">
           <div class="col-md-12 centered news-item">';
   // print group name
+  if (!empty($group)) {
   echo "<p><strong>".$group."</strong></p>";
+  }
   
   // print hours
+  if (!empty($start_time) && !empty($end_time)) {
   echo "<p>".$start_time->format("H:i")." - ".$end_time->format('H:i')."</p>";
+  }
   
   // print classroom
-  echo "<p>".$item->fields["classroom"]->values."</p>";
+  if (!empty($description)) {
+  echo "<p>".$description."</p>";
+  }
   
   // separate items
   ?> </div>

@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
+      <a class="navbar-brand" href="./"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
