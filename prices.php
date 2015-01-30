@@ -1,3 +1,5 @@
+ <?php include "setcookie.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -26,9 +28,7 @@
       <br/>
       <h1 class="text-center"><strong>Cennik warsztatów</strong></h1>
       
-      
-      
-
+ 
       
 
 

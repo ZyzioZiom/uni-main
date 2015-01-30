@@ -1,6 +1,6 @@
 // show rest of form
-$("#next").click(function() {
-	// get name input to display on form
+function expandForm() {
+  // get name input to display on form
 	var displayName = $("#name").val();
 	// print name between <span> in #thankyou-msg
 	$("#next-name span").html(displayName);
@@ -15,15 +15,40 @@ $("#next").click(function() {
 	$("#form-next").removeClass("hidden");
 	$("#form-next").css("display", "none");
 	$("#form-next").slideDown();
+}
 
+// expand form on button click
+$("#next").click(function() {
+	expandForm();
 });
 
+// expand form on Enter pressed
+$("input").keydown(function( event ) {
+  if ( event.which == 13 ) {
+    // disable submit on enter when not expanded
+    if (!$("#form-next").is(":visible")) {
+    event.preventDefault();
+    }
+    // expand only if not yet expanded
+    if (!$("#form-next").is(":visible")) {
+    expandForm();
+  }
+    // else submit form
+  }
+});
+
+// automatically check English language to prevent not focusable errors which crash the form handling
+$('#languageEnglish').prop('checked', true);
+$('#languageEnglishDiv').show();
+$('#languageEnglishLabel').removeClass("btn-default").addClass("btn-success");
+$('#choose-level-label').show();
+    
 
 // reset language level check when checking different language
 $('input[name=lang]:radio').click(function() {
 	$('input[name=language]:radio').prop('checked', false);
 	$('.LanguageDiv').hide();
-    $('#choose-level-label').show();
+   
     
     $('.language-radio-label').removeClass("btn-success").addClass("btn-default");
     

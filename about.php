@@ -1,3 +1,5 @@
+<?php include "setcookie.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -21,12 +23,12 @@
   <body>
 <? include "top-body.php"; ?>
 
-  <div class="col-md-8 centered heading">
+  <div class="col-md-8 centered heading about">
       <div class="logo text-center"></div>
       <br/>
  
-      
-<h2>Czym są warsztaty AIESEC University?</h2>
+
+<h1>Czym są warsztaty AIESEC University?</h1>
 
 <p><strong>AIESEC University</strong> to innowacyjne <strong>warsztaty językowe</strong>&nbsp;stworzone z myślą o młodych ludziach, kt&oacute;rzy kierując się chęcią rozwoju szukają jak najatrakcyjniejszych sposob&oacute;w na naukę. Kierując się tą myślą powstała idea warsztat&oacute;w&nbsp;Learn By Play, kt&oacute;re&nbsp;prowadzone przez lektor&oacute;w z r&oacute;żnych zakątk&oacute;w świata, mają uczyć poprzez zabawę i rozrywkę. <strong>Tutaj nie skupiamy sie na regułkach i odmianach</strong>, ale na żywym m&oacute;wionym jezyku, kt&oacute;ry ćwiczymy przez 7 tygodni nauki.</p>
 
@@ -36,7 +38,7 @@
 
 <h3>Language Tours</h3>
 
-<p by="" jak="" language="" learn="" ownie="" p="" poprzez="" program="" realizujemy="">Language Tours to&nbsp;<strong>kilkugodzinne spotkania z lektorem</strong>, kt&oacute;ry podczas spaceru po mieście uczy popularnych zwrot&oacute;w i nazw, kt&oacute;re mogą być przydatne w realnych sytuacjach, w sklepie, w podr&oacute;ży, w restauracji czy w pubie. Dzięki interaktywnej formie uczestnicy nie tylko przyjemnie spędzają czas z lektorem, ale też dowiadują się wielu przydatnych rzeczy. Jeśli chcesz w ciekawy spos&oacute;b nauczyć się nowych sł&oacute;wek i zwrot&oacute;w języka, z kt&oacute;rym wcześniej nie miałeś styczności zapraszamy na nasze warsztaty.</p>
+<p>Language Tours to&nbsp;<strong>kilkugodzinne spotkania z lektorem</strong>, kt&oacute;ry podczas spaceru po mieście uczy popularnych zwrot&oacute;w i nazw, kt&oacute;re mogą być przydatne w realnych sytuacjach, w sklepie, w podr&oacute;ży, w restauracji czy w pubie. Dzięki interaktywnej formie uczestnicy nie tylko przyjemnie spędzają czas z lektorem, ale też dowiadują się wielu przydatnych rzeczy. Jeśli chcesz w ciekawy spos&oacute;b nauczyć się nowych sł&oacute;wek i zwrot&oacute;w języka, z kt&oacute;rym wcześniej nie miałeś styczności zapraszamy na nasze warsztaty.</p>
 
 <h3>Kursy Intensywne</h3>
 
@@ -45,19 +47,19 @@
 <p>&nbsp;</p>   
     
     
-    <h2>Dlaczego warsztaty AIESEC University?</h2>
+<h1>Dlaczego warsztaty AIESEC University?</h1>
 
-<p>Angielski, włoski, hiszpański, francuski oraz rosyjski to jezyki, kt&oacute;rych możesz uczyć się w ramach warsztat&oacute;w AIESEC University. Wszystkich tych język&oacute;w uczyć się będziesz po angielsku, co daje Ci dodatkową korzysć i w znaczącym stopniu umożliwia podniesienie kwalifikacji zawodowych.</p>
+<p>Wszystkich język&oacute;w uczyć się będziesz po angielsku, co daje Ci dodatkową korzysć i w znaczącym stopniu umożliwia podniesienie kwalifikacji zawodowych.</p>
 
-<h3><font color="0081a8">Przystępna cena</font></h3>
+<h3>Przystępna cena</h3>
 
 <p>Bogata oferta językowa i atrakcyjna forma zajęć idą w parze z przystępną ceną, dzięki czemu kursy AIESEC University są pierwszą tak korzystną alternatywą dla dużo droższych ofert szk&oacute;ł językowych. To pierwsze tego typu rozwiazanie w Polsce!</p>
 
-<h3><font color="0081a8">Atrakcyjna forma</font></h3>
+<h3>Atrakcyjna forma</h3>
 
 <p>Opr&oacute;cz zajęć w grupie (minimum 4h tygodniowo) stawiamy na indywidualne konwersacje, gdyż jest to najszybsza metoda poznania języka w jego realnej (m&oacute;wionej i rozumianej) formie. Uczestnicy mają r&oacute;wnież dzięki indywidualnym konsultacjom przestrzeń do tego, by zadać pytania i wyjaśnić te kwestie, na kt&oacute;re zwykle nie starcza czasu podczas zajęć prowadzonych w tradycyjny spos&oacute;b.</p>
     
-<h3><font color="0081a8">Zajęcia w centrum miasta</font></h3>
+<h3>Zajęcia w centrum miasta</h3>
     
 <p>Wszystkie lekcje odbywają się na terenie Uniwersytetu Ekonomicznego przy ulicy Rakowickiej 27 (3 minuty od Dworca Głównego).</p>
     
@@ -68,7 +70,7 @@
 <p><img src="http://farm9.staticflickr.com/8434/7836830036_3163c8e68e_b.jpg" style="max-width: 100%;"/><br />
 &nbsp;</p>
 
-<p>AIESEC jest <strong>największą organizacją studencką na świecie</strong>. Jest obecny w ponad 110 krajach oraz zrzesza ponad 85&nbsp;000 członk&oacute;w. W celu zapewnienia rozwoju przyszłych lider&oacute;w, AIESEC oferuje swoim członkom <strong>doświadczenie liderskie</strong> oraz międzynarodowe w ramach <strong>praktyk zagranicznych</strong>. W AIESEC aktywnie zdobywasz praktyczną wiedzę w globalnym środowisku.&nbsp;<br />
+<p>AIESEC jest <strong>największą organizacją studencką na świecie</strong>. Jest obecny w 125 krajach oraz zrzesza ponad 100 000 członk&oacute;w. W celu zapewnienia rozwoju przyszłych lider&oacute;w, AIESEC oferuje swoim członkom <strong>doświadczenie liderskie</strong> oraz międzynarodowe w ramach <strong>praktyk zagranicznych</strong>. W AIESEC aktywnie zdobywasz praktyczną wiedzę w globalnym środowisku.&nbsp;<br />
 <br />
 Tysiące firm i organizacji partnerskich na całym świecie wspiera AIESEC w celu rozwoju naszych członk&oacute;w oraz w dotarciu do utalentowanych młodych ludzi w ramach międzynarodowego programu praktyk.&nbsp;<br />
 <br />
@@ -76,16 +78,16 @@ Byli członkowie (Alumni) są <strong>liderami w swoich organizacjach i firmach<
 
 <p>&nbsp;</p>
 
-<p><strong>AIESEC w skr&oacute;cie:</strong></p>
+    <h3>AIESEC w skr&oacute;cie:</h3>
 
-<p>113 kraj&oacute;w<br />
+<p>125 kraj&oacute;w<br />
 2 400 uniwersytet&oacute;w<br />
-86 000 członk&oacute;w<br />
+100 000 członk&oacute;w<br />
 10 000 praktyk i wolontariat&oacute;w zagranicznych<br />
-24 000 pozycji liderskich<br />
+27 000 pozycji liderskich<br />
 8 000 partner&oacute;w<br />
 500 konferencji rocznie na całym świecie<br />
-64 lat doświadczenia</p>
+66 lat doświadczenia</p>
       
 
 

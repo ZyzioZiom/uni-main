@@ -1,3 +1,5 @@
+<?php include "setcookie.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -260,41 +262,8 @@
         <input type="radio" id="arabicInd" class="language-level-radio arabic-radio" name="language" value="36">
           <label id="" class="language-level-radio" for="arabicInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
         </div>  
-            
-            
-
-        <?php
-// get utm parameters from URL
-if (isset($_GET['utm_source'])) {
-    $utm_source = $_GET['utm_source'];
-}else{
-    $utm_source = " ";
-}
-
-if (isset($_GET['utm_medium'])) {
-    $utm_medium = $_GET['utm_medium'];
-}else{
-    $utm_medium = " ";
-}
-if (isset($_GET['utm_campaign'])) {
-    $utm_campaign = $_GET['utm_campaign'];
-}else{
-    $utm_campaign = " ";
-}
-if (isset($_GET['gclid'])) {
-    $gclid = $_GET['gclid'];
-}else{
-    $gclid = " ";
-}
-
-?>
-
-				<input type="hidden" class="form-control" value="A1-pełny-formularz" id="landingpage_version" name="landingpage_version">
-				<input type="hidden" class="form-control" value="<?php echo $utm_source; ?>" id="utm_source" name="utm_source">
-				<input type="hidden" class="form-control" value="<?php echo $utm_medium; ?>" id="utm_medium" name="utm_medium">
-				<input type="hidden" class="form-control" value="<?php echo $utm_campaign; ?>" id="utm_campaign" name="utm_campaign">
-				<input type="hidden" class="form-control" value="<?php echo $gclid; ?>" id="gclid" name="gclid">	
-            <br/>
+        
+          <br/>
 				<input id="submit" class="btn btn-danger submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
 				
           

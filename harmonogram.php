@@ -1,3 +1,5 @@
+<?php include "setcookie.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>

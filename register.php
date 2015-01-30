@@ -1,8 +1,3 @@
-<meta charset="utf-8">
-</head>
-<body>
-</body>
-</html>
 <?php
 // enable error reports on screen
 ini_set('error_reporting', E_ALL);
@@ -42,11 +37,12 @@ else { // set amount for group classes
 }
 
 
-// tutaj podmienić na cookies
-$utm_source = $_POST["utm_source"];
-$utm_medium = $_POST["utm_medium"];
-$utm_campaign = $_POST["utm_campaign"];
-$gclid = $_POST["gclid"];
+// get URL parameters data from cookies
+$utm_source = $_COOKIE["utm_source"];
+$utm_medium = $_COOKIE["utm_medium"];
+$utm_campaign = $_COOKIE["utm_campaign"];
+$gclid = $_COOKIE["gclid"];
+
 
 // include Podio API
 require_once 'podio-php-4.0.2/PodioAPI.php';
