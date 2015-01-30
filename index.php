@@ -38,9 +38,10 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
+    <div class="col-md-10 centered">
       <div class="row alegreyabold">
-      <div class="col-md-10 centered">
-        <div class="col-md-2 text-center">
+      
+        <div class="col-md-3 text-center">
           <div class="col-md-12">
             <h4>ANGIELSKI</h4>
           </div>
@@ -49,7 +50,7 @@
           </div>
         </div>
       
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="col-md-12">
             <h4>NIEMIECKI</h4>
           </div>
@@ -59,7 +60,7 @@
          
         </div>
       
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="col-md-12">
             <h4>FRANCUSKI</h4>
           </div>
@@ -68,7 +69,7 @@
           </div>
         </div>
       
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="col-md-12">
             <h4>WŁOSKI</h4>
           </div>
@@ -76,32 +77,36 @@
            <img class="flag" src="img/flaga-wloski.svg" />
           </div>
         </div>
-      
-        <div class="col-md-2 text-center">
+      </div>
+      <div class="row alegreyabold">
+        <div class="col-md-3 flag-bottom text-center">
+           <div class="col-md-12">
+          <img class="flag" src="img/flaga-hiszpanski.svg" />
+         </div>
           <div class="col-md-12">
            <h4>HISZPAŃSKI</h4>
          </div>
-         <div class="col-md-12">
-          <img class="flag" src="img/flaga-hiszpanski.svg" />
-         </div>
+        
         </div>
       
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 flag-bottom text-center">
+           <div class="col-md-12">
+           <img class="flag" src="img/flaga-rosyjski.svg" />
+          </div>
           <div class="col-md-12">
             <h4>ROSYJSKI</h4>
           </div>
-          <div class="col-md-12">
-           <img class="flag" src="img/flaga-rosyjski.svg" />
-          </div>
+         
         </div>
       
-        <div class="col-md-2 col-md-offset-5 text-center">
+        <div class="col-md-3 flag-bottom text-center">
+          <div class="col-md-12">
+          <img class="flag" src="img/flaga-arabski.svg" />
+         </div>
           <div class="col-md-12">
            <h4>ARABSKI</h4>
          </div>
-         <div class="col-md-12">
-          <img class="flag" src="img/flaga-arabski.svg" />
-         </div>
+         
         </div>
       </div>
       </div>
@@ -120,7 +125,6 @@
           <li id="point4" class="point">poznawanie kultury kraju</li>
           <li id="point5" class="point">wspólne wyjścia na miasto</li>
           <li id="point6" class="point">zajęcia w samym centrum (kampus Uniwersytetu Ekonomicznego)</li>
-          <br/>
           <li id="point7" class="point">zajęcia grupowe i indywidualne<br/>dwa razy w tygodniu po 1,5 godziny</li>
 
      
@@ -130,7 +134,7 @@
     
     <div class="row">  
   
-    <div class="col-md-6 col-md-offset-3 centered text-centered">
+    <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
 
       <a href="signup.php"><div class="col-md-5 btn btn-danger">ZAPISZ SIE</div></a>
     <a href="about.php"><div class="col-md-5 col-md-offset-1 btn btn-info">DOWIEDZ SIĘ WIĘCEJ</div></a>

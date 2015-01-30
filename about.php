@@ -63,7 +63,7 @@
     
 <p>Wszystkie lekcje odbywają się na terenie Uniwersytetu Ekonomicznego przy ulicy Rakowickiej 27 (3 minuty od Dworca Głównego).</p>
     
-<h2>Czym jest AIESEC?</h2>    
+<h1>Czym jest AIESEC?</h1>    
   
 <p><strong>AIESEC</strong> jest globalną, niezależną, apolityczna, nie działającą dla zysku organizacją prowadzoną przez <strong>student&oacute;w i niedawnych absolwent&oacute;w</strong>. Członkowie interesują się&nbsp;bieżącymi problemami otaczającego nas świata, przyw&oacute;dztwem oraz zarządzaniem. AIESEC <strong>nie dyskryminuje</strong> ze względu na rasę, kolor sk&oacute;ry, płeć, orientację seksualną, wyznanie, religię ani etniczne czy społeczne pochodzenie.&nbsp;</p>
 
