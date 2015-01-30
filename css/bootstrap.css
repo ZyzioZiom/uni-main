@@ -6307,17 +6307,39 @@ body {
   margin: 0 auto;
 }
 .header {
-  color: white;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .header {
+    color: white;
     height: 500px;
-    padding-top: 20px;
     background: url(../img/header.jpg) no-repeat center;
     border-bottom: 5px white solid;
   }
 }
+.logo-header {
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: contain;
+  height: 100px;
+}
+@media (min-width: 768px) {
+  .logo-header {
+    background: url(../img/logo-header.png) no-repeat center center;
+    background-size: contain;
+    height: 140px;
+  }
+}
 .logo {
+  background: url(../img/logo.png) no-repeat center center;
+  background-size: contain;
+  height: 100px;
+}
+@media (min-width: 768px) {
+  .logo {
+    height: 140px;
+  }
+}
+.heading {
   padding-top: 20px;
 }
 @media (min-width: 768px) {

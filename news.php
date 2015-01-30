@@ -22,8 +22,8 @@
 <? include "top-body.php"; ?>
 
   <div class="row">
-  <div class="col-md-10 centered logo">
-      <div class="text-center"><img id="logo" class="text-center" src="img/logo.png" style="width:300px; margin: 0 auto;" /></div>
+  <div class="col-md-10 centered heading">
+     <div class="logo text-center"></div>
       <br/>
       
       
