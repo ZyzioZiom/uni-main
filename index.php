@@ -19,10 +19,11 @@
     <![endif]-->
   </head>
   <body>
+    <div class="col-md-12 header">
 <? include "top-body.php"; ?>
 
   <div class="col-md-10 centered">
-      <div class="text-center"><img id="logo" class="text-center" src="img/logo.png" style="width:300px; margin: 0 auto;" /></div>
+      <div class="text-center"><img id="logo" class="text-center" src="img/logo-header.png" style="width:300px; margin: 0 auto;" /></div>
       <br/>
       <h1 class="text-center"><strong>Najtańsze</strong> warsztaty językowe dla studentów w Krakowie</h1>
       
@@ -32,6 +33,7 @@
       
 
 
+    </div>
     </div>
    <br/> <!-- FLAGS -->
       <div class="row alegreyabold">
@@ -102,8 +104,8 @@
       </div>
       </div>
 
-    <div id="left-content" class="col-md-5 col-md-offset-1 alegreyabold">
-      <h2>Tylko <span style="color: red;">199 zł</span> za 8 tygodni warsztatów</h2>
+    <div id="left-content" class="col-md-6 col-md-offset-3 alegreyabold">
+      <h2 style="text-align: center;">Tylko <span style="color: red;">199 zł</span> za 8 tygodni warsztatów</h2>
     
  
     <div class="col-md-11 col-md-offset-1">
@@ -122,7 +124,15 @@
      
     </div>
   </div>
-   
+    </div>
+  
+    <div class="col-md-6 col-md-offset-3 centered text-centered" style="padding-top: 50px;">
+
+      <a href="signup.php"><div class="col-md-5 btn btn-danger">ZAPISZ SIE</div></a>
+    <a href="about.php"><div class="col-md-5 col-md-offset-1 btn btn-info">DOWIEDZ SIĘ WIĘCEJ</div></a>
+    </div>
+
+    
 
 
  

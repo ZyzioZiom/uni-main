@@ -46,7 +46,7 @@ catch (PodioError $e) {
     
 <? include "top-body.php"; ?>
 
-  <div class="col-md-10 centered">
+  <div class="col-md-10 centered logo">
       <div class="text-center"><img id="logo" class="text-center" src="img/logo.png" style="width:300px; margin: 0 auto;" /></div>
       <br/>
      <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
@@ -56,7 +56,7 @@ catch (PodioError $e) {
     
     
 
-  <div class="col-md-10 col-md-offset-1 centered">
+  <div class="col-md-10 col-md-offset-1 centered news-content" style="display:table;"> 
     
      
 <?
@@ -74,8 +74,9 @@ for($weekday=1; $weekday<7; $weekday++) {
 // weekdays
 $days = array("", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 
-?> <div class="col-md-2 news-content"> <?
-print "<h3 class='text-center'>".$days[$weekday]."</h3><br/>";
+?> <div class="col-md-2 harmonogram-day"> 
+<?
+print "<h3 class='text-center' ><strong>".$days[$weekday]."</strong></h3><br/>";
   
 // Iterate through all items in current weekday
 foreach ($collection as $item) {
@@ -107,8 +108,8 @@ foreach ($collection as $item) {
   }
   
   // separate items
-  ?> </div>
-          </div>
+    ?> </div>
+         </div>
           <br/>
 <?
 }

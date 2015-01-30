@@ -15,7 +15,7 @@
 .navbar {
 	//display: none;
 	@media (min-width: @screen-sm-min) { 
-		display: block;
+		//display: block;
 	}
 
 }
@@ -46,5 +46,14 @@
 }
 
 .news-item {
+  border-top: 1px dotted black;
+  padding-top: 10px;
+}
+
+.harmonogram-day {
   border-bottom: 2px dotted black;
+  border-right: 2px dotted black;
+  @media (min-width: @screen-sm-min) {
+    border-bottom: 0;
+  }
 }

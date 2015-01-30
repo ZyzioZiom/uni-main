@@ -21,7 +21,7 @@
   <body>
 <? include "top-body.php"; ?>
 
-  <div class="col-md-8 centered">
+  <div class="col-md-8 centered logo">
       <div class="text-center"><img id="logo" class="text-center" src="img/logo.png" style="width:300px; margin: 0 auto;" /></div>
       <br/>
  
@@ -65,7 +65,7 @@
   
 <p><strong>AIESEC</strong> jest globalną, niezależną, apolityczna, nie działającą dla zysku organizacją prowadzoną przez <strong>student&oacute;w i niedawnych absolwent&oacute;w</strong>. Członkowie interesują się&nbsp;bieżącymi problemami otaczającego nas świata, przyw&oacute;dztwem oraz zarządzaniem. AIESEC <strong>nie dyskryminuje</strong> ze względu na rasę, kolor sk&oacute;ry, płeć, orientację seksualną, wyznanie, religię ani etniczne czy społeczne pochodzenie.&nbsp;</p>
 
-<p><img src="http://farm9.staticflickr.com/8434/7836830036_3163c8e68e_b.jpg" /><br />
+<p><img src="http://farm9.staticflickr.com/8434/7836830036_3163c8e68e_b.jpg" style="max-width: 100%;"/><br />
 &nbsp;</p>
 
 <p>AIESEC jest <strong>największą organizacją studencką na świecie</strong>. Jest obecny w ponad 110 krajach oraz zrzesza ponad 85&nbsp;000 członk&oacute;w. W celu zapewnienia rozwoju przyszłych lider&oacute;w, AIESEC oferuje swoim członkom <strong>doświadczenie liderskie</strong> oraz międzynarodowe w ramach <strong>praktyk zagranicznych</strong>. W AIESEC aktywnie zdobywasz praktyczną wiedzę w globalnym środowisku.&nbsp;<br />
