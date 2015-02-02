@@ -40,74 +40,68 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
-    <div class="col-md-10 centered">
-      <div class="row alegreyabold">
+    <div class="col-md-10 centered alegreyabold">
       
-        <div class="col-md-3 text-center">
+      
+        <div class="col-md-2 text-center">
           <div class="col-md-12">
             <h4>ANGIELSKI</h4>
           </div>
           <div class="col-md-12">
-            <img class="flag" src="img/flaga-angielski.svg" />
+            <img class="flag" src="img/flaga-en.png" />
           </div>
         </div>
       
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <div class="col-md-12">
             <h4>NIEMIECKI</h4>
           </div>
           <div class="col-md-12">
-            <img class="flag" src="img/flaga-niemiecki.svg" />
+            <img class="flag" src="img/flaga-de.png" />
           </div> 
          
         </div>
       
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <div class="col-md-12">
             <h4>FRANCUSKI</h4>
           </div>
           <div class="col-md-12">
-            <img class="flag" src="img/flaga-francuski.svg" />
+            <img class="flag" src="img/flaga-fr.png" />
           </div>
         </div>
       
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <div class="col-md-12">
             <h4>WŁOSKI</h4>
           </div>
           <div class="col-md-12">
-           <img class="flag" src="img/flaga-wloski.svg" />
+           <img class="flag" src="img/flaga-it.png" />
           </div>
         </div>
-      </div>
-      <div class="row alegreyabold">
-        <div class="col-md-3 flag-bottom text-center">
+     
+        <div class="col-md-2 text-center">
            <div class="col-md-12">
-          <img class="flag" src="img/flaga-hiszpanski.svg" />
-         </div>
-          <div class="col-md-12">
            <h4>HISZPAŃSKI</h4>
          </div>
-        
+        <div class="col-md-12">
+          <img class="flag" src="img/flaga-es.png" />
+         </div>
+          
         </div>
       
-        <div class="col-md-3 flag-bottom text-center">
+        <div class="col-md-2 text-center">
            <div class="col-md-12">
-           <img class="flag" src="img/flaga-rosyjski.svg" />
-          </div>
-          <div class="col-md-12">
             <h4>ROSYJSKI</h4>
           </div>
-         
+         <div class="col-md-12">
+           <img class="flag" src="img/flaga-ru.png" />
+          </div>
+          
         </div>
       
-        <div class="col-md-3 flag-bottom text-center">
-          <div class="col-md-12">
-          <img class="flag" src="img/flaga-arabski.svg" />
-         </div>
-          <div class="col-md-12">
-           <h4>ARABSKI</h4>
-         </div>
+      
+          
          
         </div>
       </div>
@@ -116,35 +110,60 @@
     <div class="col-md-10 col-md-offset-1 alegreyabold">
       <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
- 
+ <!-- left column -->
     <div class="col-md-12">
        <div class="col-md-6">
-         <div class="col-md-12 point">
+         <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon1.png" />
+         </div>
+         <div class="col-md-10 point">
         zajęcia w formie konwersatoriów z native speakerami o międzynarodowym doświadczeniu
          </div>
-         <div class="col-md-12 point">
+         <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon2.png" />
+         </div>
+         <div class="col-md-10 point">
         warsztaty odbywają się na terenie Uniwersytetu Ekonomicznego w Krakowie
          </div> 
-         <div class="col-md-12 point">
-        grupy składają się z max. 12 osób
+         <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon3.png" />
          </div>
-         <div class="col-md-12 point">
+         <div class="col-md-10 point">
+        grupy składają się z maksymalnie 12 osób
+         </div>
+         <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon4.png" />
+         </div>
+         <div class="col-md-10 point">
         kursy regularne<br/>
-        8 tyg, 2 x 90min / tyg.
+        8 tygodni, 2 x 90min / tydzień<br/>
+        indywidualne 2 x 60min
          </div>
       </div> 
-      
+<!-- right column -->      
       <div class="col-md-6">
-        <div class="col-md-12 point">
+        <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon5.png" />
+         </div>
+        <div class="col-md-10 point">
         możliwość wyboru indywidualnego toku nauczania 
         </div>
-         <div class="col-md-12 point">
+        <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon6.png" />
+         </div>
+         <div class="col-md-10 point">
         w zależności od języka oferujemy zajęcia na poziomach: A1 - C1
          </div> 
-         <div class="col-md-12 point">
+        <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon7.png" />
+         </div>
+         <div class="col-md-10 point">
         Language Tours - poznaj swojego lektora poza terenem uczelni
          </div>
-         <div class="col-md-12 point">
+        <div class="col-md-2 text-center">
+          <img class="icon" src="img/icon8.png" />
+         </div>
+         <div class="col-md-10 point">
         po ukończeniu kursu uczestnik otrzymuje certyfikat językowy
          </div>
       </div>
