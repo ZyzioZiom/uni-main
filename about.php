@@ -22,7 +22,7 @@
   </head>
   <body>
 <? include "top-body.php"; ?>
-
+<div id="content">
   <div class="col-md-8 centered heading about">
       <div class="logo text-center"></div>
       <br/>
@@ -30,7 +30,7 @@
 
 <h1>Czym są warsztaty AIESEC University?</h1>
 
-<p><strong>AIESEC University</strong> to innowacyjne <strong>warsztaty językowe</strong>&nbsp;stworzone z myślą o młodych ludziach, kt&oacute;rzy kierując się chęcią rozwoju szukają jak najatrakcyjniejszych sposob&oacute;w na naukę. Kierując się tą myślą powstała idea warsztat&oacute;w&nbsp;Learn By Play, kt&oacute;re&nbsp;prowadzone przez lektor&oacute;w z r&oacute;żnych zakątk&oacute;w świata, mają uczyć poprzez zabawę i rozrywkę. <strong>Tutaj nie skupiamy sie na regułkach i odmianach</strong>, ale na żywym m&oacute;wionym jezyku, kt&oacute;ry ćwiczymy przez 7 tygodni nauki.</p>
+<p><strong>AIESEC University</strong> to innowacyjne <strong>warsztaty językowe</strong>&nbsp;stworzone z myślą o młodych ludziach, kt&oacute;rzy kierując się chęcią rozwoju szukają jak najatrakcyjniejszych sposob&oacute;w na naukę. Kierując się tą myślą powstała idea warsztat&oacute;w&nbsp;Learn By Play, kt&oacute;re&nbsp;prowadzone przez lektor&oacute;w z r&oacute;żnych zakątk&oacute;w świata, mają uczyć poprzez zabawę i rozrywkę. <strong>Tutaj nie skupiamy sie na regułkach i odmianach</strong>, ale na żywym m&oacute;wionym jezyku, kt&oacute;ry ćwiczymy przez 8 tygodni nauki.</p>
 
 <p>Warsztaty są<strong> prowadzone w języku angielskim</strong>, co dodatkowo tworzy uczestnikom sprzyjające środowisko do nauki. Jednocześnie idea warsztat&oacute;w, kt&oacute;ra brzmi Learn By Play pozwala uczestnikom i lektorom na czerpanie radości z nauki jak i naukę poprzez zabawę.&nbsp;</p>
 
@@ -94,7 +94,7 @@ Byli członkowie (Alumni) są <strong>liderami w swoich organizacjach i firmach<
     </div>
  
  
-
+    </div>
     
   
 <? include 'bottom-scripts.php'; ?>

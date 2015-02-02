@@ -1,7 +1,7 @@
 <?php
 // enable error reports on screen
 ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 'On');  //On or Off
+ini_set('display_errors', 1);  //On or Off
 //echo PHP_VERSION . "<br>";
 
 require_once "config.php";

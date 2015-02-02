@@ -6289,22 +6289,45 @@ button.close {
 html {
   width: 100%;
   height: 100%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 body {
   width: 100%;
   height: 100%;
   padding-top: 50px;
   font-family: "alegreyaregular";
-  background: url(../img/bg-sm.jpg) #ffffff top center;
+  background: url(../img/bg2.jpg) #ffffff top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 @media (min-width: 768px) {
   body {
-    background: url(../img/bg.jpg) #ffffff top center;
+    background: url(../img/bg2-sm.jpg) #ffffff top center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background: url(../img/bg2-md.jpg) #ffffff top center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: url(../img/bg2-lg.jpg) #ffffff top center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 .centered {
   float: none;
   margin: 0 auto;
+}
+#content {
+  display: none;
 }
 .header {
   padding-top: 20px;
@@ -6313,6 +6336,7 @@ body {
   .header {
     color: white;
     height: 500px;
+    padding-top: 100px;
     background: url(../img/header.jpg) no-repeat center;
     border-bottom: 5px white solid;
   }
@@ -6365,9 +6389,24 @@ body {
 }
 @media (min-width: 768px) {
   .flag-bottom {
-    margin-top: -50px;
-    padding-left: 220px;
+    margin-top: -10%;
+    padding-left: 20%;
   }
+}
+@media (min-width: 992px) {
+  .flag-bottom {
+    margin-top: -8%;
+    padding-left: 17%;
+  }
+}
+@media (min-width: 1200px) {
+  .flag-bottom {
+    margin-top: -8%;
+    padding-left: 18.5%;
+  }
+}
+.navbar-title {
+  color: #777;
 }
 .form {
   background: rgba(150, 200, 255, 0.8);

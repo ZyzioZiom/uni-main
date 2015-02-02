@@ -22,7 +22,7 @@
   </head>
   <body>
 <? include "top-body.php"; ?>
-
+<div id="content">
   <div class="row">
   <div class="col-md-10 centered heading">
      <div class="logo text-center"></div>
@@ -159,10 +159,9 @@ foreach ($files as $file) {
 
     </div>
     </div>
-    
+    </div>
 <? include 'bottom-scripts.php'; ?>
     
 
-    
   </body>
 </html>

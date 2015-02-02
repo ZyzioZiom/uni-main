@@ -47,7 +47,7 @@ catch (PodioError $e) {
 ?>
     
 <? include "top-body.php"; ?>
-
+<div id="content">
   <div class="col-md-10 centered heading">
       <div class="logo text-center"></div>
       <br/>
@@ -62,6 +62,9 @@ catch (PodioError $e) {
     
      
 <?
+// weekdays
+$days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
+
 // iterate through weekdays
 for($weekday=1; $weekday<7; $weekday++) {
   // Get items from app with harmonogram_app_id
@@ -73,8 +76,7 @@ for($weekday=1; $weekday<7; $weekday++) {
 
 	)); 
 
-// weekdays
-$days = array("", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
+
 
 ?> <div class="col-md-2 harmonogram-day"> 
 <?
@@ -119,14 +121,12 @@ foreach ($collection as $item) {
 }
 ?>
 
-    </div>
+    
    
   
 
     
 <? include 'bottom-scripts.php'; ?>
-    
-
     
   </body>
 </html>

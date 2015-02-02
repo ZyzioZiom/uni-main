@@ -21,16 +21,18 @@
     <![endif]-->
   </head>
   <body>
-    <div class="col-md-12 header">
+    
+    
 <? include "top-body.php"; ?>
-
+<div id="content">
+  <div class="col-md-12 header">
   <div class="col-md-10 centered">
       <div class="logo-header text-center"></div>
       <br/>
-      <h1 class="text-center"><strong>Najtańsze</strong> warsztaty językowe dla studentów w Krakowie</h1>
+      <h1 class="text-center">Warsztaty językowe z native speakerami</h1>
       
       
-      <h3 class="text-center">Prowadzone przez native speakerów</h3>
+      <h3 class="text-center">8 zł za godzinę</h3>
 
       
 
@@ -111,22 +113,53 @@
       </div>
       </div>
 <div class="row">
-    <div id="left-content" class="col-md-6 col-md-offset-3 alegreyabold">
-      <h2 style="text-align: center;">Tylko <span style="color: red;">199 zł</span> za 8 tygodni warsztatów</h2>
+    <div class="col-md-10 col-md-offset-1 alegreyabold">
+      <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
  
-    <div class="col-md-11 col-md-offset-1">
-       
-
-        <ul>
-          <li id="point1" class="point">zajęcia z native speakerami</li>
-          <li id="point2" class="point">nacisk na konwersacje</li>
-          <li id="point3" class="point">elastyczny grafik</li>
-          <li id="point4" class="point">poznawanie kultury kraju</li>
-          <li id="point5" class="point">wspólne wyjścia na miasto</li>
-          <li id="point6" class="point">zajęcia w samym centrum (kampus Uniwersytetu Ekonomicznego)</li>
-          <li id="point7" class="point">zajęcia grupowe i indywidualne<br/>dwa razy w tygodniu po 1,5 godziny</li>
-
+    <div class="col-md-12">
+       <div class="col-md-6">
+         <div class="col-md-12 point">
+        zajęcia w formie konwersatoriów z native speakerami o międzynarodowym doświadczeniu
+         </div>
+         <div class="col-md-12 point">
+        warsztaty odbywają się na terenie Uniwersytetu Ekonomicznego w Krakowie
+         </div> 
+         <div class="col-md-12 point">
+        grupy składają się z max. 12 osób
+         </div>
+         <div class="col-md-12 point">
+        kursy regularne<br/>
+        8 tyg, 2 x 90min / tyg.
+         </div>
+      </div> 
+      
+      <div class="col-md-6">
+        <div class="col-md-12 point">
+        możliwość wyboru indywidualnego toku nauczania 
+        </div>
+         <div class="col-md-12 point">
+        w zależności od języka oferujemy zajęcia na poziomach: A1 - C1
+         </div> 
+         <div class="col-md-12 point">
+        Language Tours - poznaj swojego lektora poza terenem uczelni
+         </div>
+         <div class="col-md-12 point">
+        po ukończeniu kursu uczestnik otrzymuje certyfikat językowy
+         </div>
+      </div>
+    </div>  
+         
+         
+         
+         
+         
+         
+      
+      
+      
+     </div> 
+        
      
     </div>
   </div>
@@ -146,11 +179,12 @@
 
  
 
-    
+   </div> 
   
 <? include 'bottom-scripts.php'; ?>
     
 
-    
+      
+  
   </body>
 </html>

@@ -18,13 +18,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="./"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
+      <a class="navbar-brand nav-link" href="./"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><p class="navbar-text"><strong>Najtańsze</strong> warsztaty językowe dla studentów w Krakowie</p></li>
+        <li><p class="navbar-text"><a class="navbar-title nav-link" href="./">Warsztaty językowe</a></p></li>
         
       </ul>
       
@@ -32,10 +32,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <ul class="nav navbar-nav navbar-right">
         <li style="background: #B9121B" ><a href="signup.php"><strong><span style="color: white;">ZAPISZ SIĘ</span></strong></a></li>
-        <li><a href="harmonogram.php">HARMONOGRAM</a></li>
-        <li><a href="news.php">AKTUALNOŚCI</a></li>
-        <li><a href="prices.php">CENNIK</a></li>
-        <li><a href="about.php">O WARSZTATACH</a></li>
+        <li><a class="nav-link" href="harmonogram.php">HARMONOGRAM</a></li>
+        <li><a class="nav-link" href="news.php">AKTUALNOŚCI</a></li>
+        <li><a class="nav-link" href="prices.php">CENNIK</a></li>
+        <li><a class="nav-link" href="about.php">O WARSZTATACH</a></li>
         <li><a href="https://www.facebook.com/lckrakow" target="_blank"><img src="img/FB-f-Logo__blue_100.png" style="height: 20px;" /></a></li>
         
         

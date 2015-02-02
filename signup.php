@@ -71,7 +71,7 @@
         </div>
 
         <div class="form-group">
-        <label for="email">Jeszcze tylko Twój email:</label>
+        <label for="email">Jeszcze tylko Twój e-mail:</label>
           <input type="email" class="form-control" id="email" name="email" required
                 oninvalid="this.setCustomValidity('Podaj prawidłowy adres email')" 
                 oninput="setCustomValidity('')">

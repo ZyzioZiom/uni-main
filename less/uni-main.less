@@ -3,6 +3,10 @@
 html {
   width: 100%;
   height: 100%;
+  
+  //  make scrollbar always visible
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
 }
 
 body {
@@ -12,10 +16,26 @@ body {
   // use alegreya font on whole website
   .alegreyaregular;
   
-  background: url(../img/bg-sm.jpg) #fff top center;
+  background: url(../img/bg2.jpg) #fff top center;
+  background-size: cover;
+  background-attachment: fixed;
   
     @media (min-width: @screen-sm-min) {
-      background: url(../img/bg.jpg) #fff top center;
+      background: url(../img/bg2-sm.jpg) #fff top center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    @media (min-width: @screen-md-min) {
+      background: url(../img/bg2-md.jpg) #fff top center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  
+    @media (min-width: @screen-lg-min) {
+      background: url(../img/bg2-lg.jpg) #fff top center;
+      background-size: cover;
+      background-attachment: fixed;
     }
 }
 
@@ -27,4 +47,8 @@ body {
 .centered {
   float: none;
   margin: 0 auto;
+}
+
+#content {
+  display: none;
 }
