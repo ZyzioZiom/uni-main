@@ -36,7 +36,6 @@ else { // set amount for group classes
   applyDiscount($amount, $attended, $amountWhenAttended);
 }
 
-
 // get URL parameters data from cookies
 $utm_source = $_COOKIE["utm_source"];
 $utm_medium = $_COOKIE["utm_medium"];
@@ -102,4 +101,6 @@ $item->save();
 
 // welcome mail sender 
 //require "mailer.php";
+
+
 ?>

@@ -1,15 +1,14 @@
 // show rest of form
 function expandForm() {
   // get name input to display on form
-	var displayName = $("#name").val();
-	// print name between <span> in #thankyou-msg
-	$("#next-name span").html(displayName);
+	var name = $("#name").val();
+	// print name between <span>
+	$("#next-name span").html(name);
 
-	$("#next").slideUp(function() {
-		if (displayName.length > 0) {
-		$("#next-name").removeClass("hidden");
-		$("#next-name").css("display", "none");
-		$("#next-name").fadeIn();
+	$("#next").slideUp("fast", function() {
+		if (name.length > 0) {
+        $("#next-name span").append("!");
+		$("#next-name span").removeClass("hidden");
 		}
 	});
 	$("#form-next").removeClass("hidden");
@@ -100,6 +99,9 @@ $('input[name=lang]:radio').click(function() {
 
 // insert form data into variable
 var dataString = $("#form").serialize(); 
+
+
+   
 //alert(dataString);
  $.ajax({
   type: "POST",
@@ -108,6 +110,7 @@ var dataString = $("#form").serialize();
   beforeSend: function(){ // while sending
      $("body").css("cursor", "progress"); // loading cursor
      $("#submit").val("CHWILECZKĘ...");
+    
    },
 })
  
@@ -123,22 +126,24 @@ var dataString = $("#form").serialize();
   .done(function( msg ) { // data sent with success
 	// show output
 	//alert(msg); 
-
+   
 	// Analytics conversion event
-	//ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na listę');
+	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na listę');
 	// Mixpanel conversion event
-	//mixpanel.track("Zapisanie się na listę");
+	mixpanel.track("Zapisanie się na listę");
 	// hide elements and show thank you message
 	$("body").css("cursor", "auto"); // back to normal cursor
 	$("#content").fadeOut(function() {
       $("#thankyou-row").removeClass("hidden");
     });
     // send virtual pageview (for remarketing, conversion tracking)
-    // _gaq.push(['_setAccount', 'UA-12345-1']); // set AIESEC account
-    // _gaq.push(['_trackPageview', '/thankyou']);
+    _gaq.push(['_setAccount', 'UA-12345-1']); // set AIESEC account
+    _gaq.push(['_trackPageview', '/thankyou']);
      
     
 	});
+   
+   
 	// get name input to display on thank you
 	var displayName = $("#name").val();
 	// print name between <span> in #thankyou-msg

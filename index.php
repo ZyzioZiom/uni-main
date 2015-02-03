@@ -104,8 +104,8 @@
           
          
         </div>
-      </div>
-      </div>
+      
+      
 <div class="row">
     <div class="col-md-10 col-md-offset-1 alegreyabold">
       <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
@@ -181,9 +181,7 @@
         
      
     </div>
-  </div>
-  </div>
-    
+  
     <div class="row">  
   
     <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
@@ -197,7 +195,7 @@
 
 
  
-
+ <? include 'footer.php'; ?>   
    </div> 
   
 <? include 'bottom-scripts.php'; ?>

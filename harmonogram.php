@@ -117,11 +117,13 @@ foreach ($collection as $item) {
           <br/>
 <?
 }
-?> </div> <?
+?> 
+   
+    </div> <?
 }
 ?>
-
-    
+</div>
+     <? include 'footer.php'; ?>   
    
   
 

@@ -93,8 +93,19 @@ Byli członkowie (Alumni) są <strong>liderami w swoich organizacjach i firmach<
 
     </div>
  
- 
+  <div class="row">  
+  
+    <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
+
+      <a href="signup.php"><div class="col-md-6 col-md-offset-3 btn btn-danger">ZAPISZ SIE</div></a>
+   
     </div>
+      </div>
+ 
+  
+  
+   <? include 'footer.php'; ?>   
+</div>
     
   
 <? include 'bottom-scripts.php'; ?>

@@ -6328,6 +6328,10 @@ body {
 }
 #content {
   display: none;
+  min-height: 100%;
+}
+.footer {
+  background: #fff;
 }
 .header {
   padding-top: 20px;

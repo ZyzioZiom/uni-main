@@ -89,17 +89,19 @@ foreach ($collection as $item) {
       // print each image
 	  foreach ($image as $img) {
 	  	// This is get_raw function for displaying images while not logged in to Podio as user
-
-	  	// Download the file. This might take a while...
-		$file_content = $img->get_raw();
-
+        	  	
 		// assign image id to variable
 		$img_id = PodioFile::get($img->file_id);
+        
+        // if image with current id doesn't exist, save it on server in folder /img/news/
+        if (!file_exists('img/news/'.$img->file_id.'.jpg')) {
+        // Download and save the file. This might take a while...          
+          file_put_contents('img/news/'.$img->file_id.'.jpg', $img_id->get_raw());
+        }
+
 		
-		// if image with current id doesn't exist, save it on server in folder img/
-		if (!file_exists('img/news/'.$img->file_id.'.jpg')) {
-			file_put_contents('img/news/'.$img->file_id.'.jpg', $img_id->get_raw());
-		}
+		
+		
 		
 		// display image
 		print "<div class='text-center'><img src='img/news/".$img->file_id.".jpg' class='news-image'></div><br/>";
@@ -159,6 +161,9 @@ foreach ($files as $file) {
 
     </div>
     </div>
+  
+   <? include 'footer.php'; ?>   
+  
     </div>
 <? include 'bottom-scripts.php'; ?>
     

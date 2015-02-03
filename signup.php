@@ -26,7 +26,7 @@
 
     <div id="thankyou-row" class="row hidden">
       <div class="col-md-8 centered thankyou alegreyabold">
-    <h1 id="thankyou-msg" class="thankyou-msg text-center">Dzięki za wypełnienie formularza, <span></span>!<br/>Jesteś super!</h1>
+    <h1 id="thankyou-msg" class="thankyou-msg text-center"><span></span>, dziękujemy za zapisanie się na warsztaty!</h1>
     <p class="thankyou-msg text-center">Teraz sprawdź swoją skrzynkę pocztową.</p>
       </div>
     </div>
@@ -52,12 +52,12 @@
           <div id="next" class="btn btn-primary submit">DALEJ</div>
         
         <div id="form-next" class="hidden">
-          <label id="next-name" class="hidden"><span></span>! Piękne imię!</label>
+          
         
          
 				
         <div class="form-group">
-        <label for="lastname">A jak masz na nazwisko?</label>
+        <label id="next-name" for="lastname"><span></span> A jak masz na nazwisko?</label>
           <input type="text" class="form-control" id="lastname" name="lastname" required
                 oninvalid="this.setCustomValidity('Podaj swoje nazwisko')" 
                 oninput="setCustomValidity('')">
@@ -93,10 +93,10 @@
         <div class="choose-language">
         <input type="radio" id="languageEnglish" class="language-radio" name="lang" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
           <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski</label>
-
+<!--
         <input type="radio" id="languageGerman" class="language-radio" name="lang" value="de">
           <label id="languageGermanLabel" class="language-radio-label btn btn-default" for="languageGerman">Niemiecki</label>
-
+-->
         <input type="radio" id="languageFrench" class="language-radio" name="lang" value="fr">
           <label id="languageFrenchLabel" class="language-radio-label btn btn-default" for="languageFrench">Francuski</label>
 
@@ -140,7 +140,7 @@
           <label id="" class="language-level-radio english-radio" for="englishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>                </div>
 
 
-        <!-- German -->
+        <!-- German --><!--
         <div id="languageGermanDiv" class="LanguageDiv">
            
         <input type="radio" id="germanA1" class="language-level-radio german-radio" name="language" value="6" >
@@ -161,7 +161,7 @@
         <input type="radio" id="germanInd" class="language-level-radio german-radio" name="language" value="11">
           <label id="" class="language-level-radio" for="germanInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>          
         </div>
-
+-->
         <!-- French -->
         <div id="languageFrenchDiv" class="LanguageDiv">
             
@@ -275,9 +275,11 @@
       </div>
 
 </div>
+        
+
 </div>
  
-
+ <? include 'footer.php'; ?>   
       
 <? include 'bottom-scripts.php'; ?>
     
