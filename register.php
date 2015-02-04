@@ -40,6 +40,8 @@ else { // set amount for group classes
 $utm_source = $_COOKIE["utm_source"];
 $utm_medium = $_COOKIE["utm_medium"];
 $utm_campaign = $_COOKIE["utm_campaign"];
+$utm_term = $_COOKIE["utm_term"];
+$utm_content = $_COOKIE["utm_content"];
 $gclid = $_COOKIE["gclid"];
 
 
@@ -79,6 +81,8 @@ $fields = new PodioItemFieldCollection(array(
   new PodioTextItemField(array("external_id" => "utmsource", "values" => $utm_source)),
   new PodioTextItemField(array("external_id" => "utmmedium", "values" => $utm_medium)),
   new PodioTextItemField(array("external_id" => "utmcampaign", "values" => $utm_campaign)),
+  new PodioTextItemField(array("external_id" => "utmterm", "values" => $utm_term)),
+  new PodioTextItemField(array("external_id" => "utmcontent", "values" => $utm_content)),
   new PodioTextItemField(array("external_id" => "gclid", "values" => $gclid)),
   
   

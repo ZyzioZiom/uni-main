@@ -14,6 +14,8 @@ function expandForm() {
 	$("#form-next").removeClass("hidden");
 	$("#form-next").css("display", "none");
 	$("#form-next").slideDown();
+//  send Analytics event
+//  ga('send', 'event', 'Form', 'Expand', 'Rozwinięcie formularza');
 }
 
 // expand form on button click
@@ -128,17 +130,18 @@ var dataString = $("#form").serialize();
 	//alert(msg); 
    
 	// Analytics conversion event
-	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na listę');
+//	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na warsztaty');
+   
 	// Mixpanel conversion event
-	mixpanel.track("Zapisanie się na listę");
+//	mixpanel.track("Zapisanie się na warsztaty");
 	// hide elements and show thank you message
 	$("body").css("cursor", "auto"); // back to normal cursor
 	$("#content").fadeOut(function() {
       $("#thankyou-row").removeClass("hidden");
     });
     // send virtual pageview (for remarketing, conversion tracking)
-    _gaq.push(['_setAccount', 'UA-12345-1']); // set AIESEC account
-    _gaq.push(['_trackPageview', '/thankyou']);
+//    _gaq.push(['_setAccount', 'UA-34751885-2']); // set AIESEC account
+//    _gaq.push(['_trackPageview', '/thankyou']);
      
     
 	});

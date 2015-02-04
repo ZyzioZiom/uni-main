@@ -12,5 +12,10 @@
             i jeszcze więcej partnerów
           </div>
         </div>
+      <div class="row">
+        <a href="http://aiesec.pl/" target="_blank"><img src="img/aiesec-logo-short.png" />  </a>
       </div>
+  
+      </div>  
+  
     </footer>
