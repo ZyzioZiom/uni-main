@@ -215,9 +215,7 @@
    </div> 
   
 <? include 'bottom-scripts.php'; ?>
-    
-
-      
+  
   
   </body>
 </html>

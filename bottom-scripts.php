@@ -7,3 +7,15 @@
     <!-- form handler for validation and ajax request -->
     <script src="js/form-handler.js"></script>
      <script src="js/fade-content.js"></script>
+
+
+  
+<script>
+$("#changeFontButton").click(function() {
+  var font = $("#changeFont").val();
+  $("body").css("font-family", font);
+  $("div").removeClass("alegreyabold");
+});
+
+</script>
+      
