@@ -37,3 +37,10 @@ Full domain: musisz wiedzieć, pod jakim adresem www będzie nasza strona. Najpr
 
 Wygeneruj klucz, a nowe wartości pojawią się poniżej. Przeklej je do config.php jako client_id oraz client_secret
 
+---------
+Jak dokończyć automatyzację i przygotować aplikację na przyszłe edycje warsztatów:
+
+Należy napisać funkcję, która stworzy formularz dynamicznie, pobierając nazwy języków oraz dostępne poziomy z aplikacji w Podio.
+Schemat języków powinien wyglądać tak: "NAZWA_JĘZYKA POZIOM", np. "NIEMIECKI B2"
+
+Należy pobierać item->title i wyrażeniem regularnym (pierwsze słowo w title) zebrać grupy jednego języka, potem wylistować je po kolei jako grupy do wybrania przez kursanta (input type=radio w formularzu, value pobrać z numeru kategorii w Podio) 

@@ -1,5 +1,5 @@
 <footer class="footer">
-      <div class="container alegreyabold">
+      <div class="container fontface">
         <h4>Nasi partnerzy</h4>
         <div class="row">
           <div class="col-md-4">

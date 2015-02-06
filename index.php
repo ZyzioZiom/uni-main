@@ -40,7 +40,7 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
-    <div class="col-md-10 centered alegreyabold">
+    <div class="col-md-10 centered fontface">
       
       
         <div class="col-md-2 text-center">
@@ -107,14 +107,14 @@
       
       
 <div class="row">
-    <div class="col-md-10 col-md-offset-1 alegreyabold">
+    <div class="col-md-10 col-md-offset-1 fontface">
       <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
  <!-- left column -->
     <div class="col-md-12">
        <div class="col-md-6">
          <div class="row">
-           <div class="col-md-2 text-center">
+         <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon1.png" />
          </div>
          <div class="col-md-10 point">
@@ -122,7 +122,7 @@
          </div>
          </div>
          <div class="row">
-         <div class="col-md-2 text-center">
+         <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon2.png" />
          </div>
          <div class="col-md-10 point">
@@ -130,7 +130,7 @@
          </div> 
          </div>
          <div class="row">
-         <div class="col-md-2 text-center">
+         <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon3.png" />
          </div>
          <div class="col-md-10 point">
@@ -138,7 +138,7 @@
          </div>
          </div>
          <div class="row">
-         <div class="col-md-2 text-center">
+         <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon4.png" />
          </div>
          <div class="col-md-10 point">
@@ -151,7 +151,7 @@
 <!-- right column -->      
       <div class="col-md-6">
         <div class="row">
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon5.png" />
          </div>
         <div class="col-md-10 point">
@@ -159,7 +159,7 @@
         </div>
         </div>
         <div class="row">
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon6.png" />
          </div>
          <div class="col-md-10 point">
@@ -167,7 +167,7 @@
          </div> 
         </div>
         <div class="row">
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon7.png" />
          </div>
          <div class="col-md-10 point">
@@ -175,7 +175,7 @@
          </div>
         </div>
         <div class="row">
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 text-center h4">
           <img class="icon" src="img/icon8.png" />
          </div>
          <div class="col-md-10 point">

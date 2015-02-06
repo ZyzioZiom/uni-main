@@ -25,14 +25,14 @@
 
 
     <div id="thankyou-row" class="row hidden">
-      <div class="col-md-8 centered thankyou alegreyabold">
+      <div class="col-md-8 centered thankyou fontface">
     <h1 id="thankyou-msg" class="thankyou-msg text-center"><span></span>, dziękujemy za zapisanie się na warsztaty!</h1>
     <p class="thankyou-msg text-center">Teraz sprawdź swoją skrzynkę pocztową.</p>
       </div>
     </div>
    
 
-      <div id="content" class="row alegreyabold">
+      <div id="content" class="row fontface">
       <div class="col-md-10 centered heading">
          <div class="logo text-center"></div>
       <br/>
