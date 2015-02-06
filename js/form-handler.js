@@ -92,6 +92,35 @@ $('input[name=lang]:radio').click(function() {
 });
 
 
+
+// get chosen language name
+
+  $(".language-radio").change(function() {
+      
+    if (this.checked) {
+    var languageName = $('label[for="' + this.id + '"]').html();
+    }
+});
+
+
+
+// choose language group
+
+  
+  $(".language-level-radio").click(function() {
+//  get label text of clicked input
+   var text = $('label[for="' + this.id + '"]').html();
+  
+//  cut languageLevel from label text
+  var languageLevel = text.substring(0, 2);
+  
+  chooseGroup();
+});
+
+
+chooseGroup = function() {
+$("#languageGroupChoose").html(languageName + " " + languageLevel);
+}
 // Ajax form
 
  $('#form').submit(function(submit) {

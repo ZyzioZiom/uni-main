@@ -263,6 +263,17 @@
           <label id="" class="language-level-radio" for="arabicInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
         </div>  
         
+          
+          
+        
+          
+          
+        <!-- Language groups -->
+           <div class="form-group">
+             <div id="languageGroupChoose"></div>
+          </div>
+          
+          
           <br/>
 				<input id="submit" class="btn btn-danger submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
 				
@@ -332,11 +343,14 @@ foreach ($collection as $item) {
 foreach($groups as $group) {
   // get first word from group name
   $groupLanguage = strtok($group, " ");
-  echo $groupLanguage;
+  
+  // get group level
+  $groupLevel = substr($group, -4, 2);
+  
   // last character of group name
   $groupNumber = substr($group, -1);
   // group number as input value will be sent to Podio
-  echo "<label>";
+  echo "<label class='language".$groupLanguage."Group".$groupLevel."'>";
   echo "<input type='radio' name='group' value='".$groupNumber."'>";
   echo "<strong>".$group ."</strong><br/>";
   
