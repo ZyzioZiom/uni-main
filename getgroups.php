@@ -25,8 +25,12 @@ catch (PodioError $e) {
 	echo $e . "<br><br><br>";
   }
 
+//get language data from ajax request
+//$lang = $_GET['lang'];
+//$level = $_GET['level'];
 
-          // weekdays
+
+// weekdays
 $days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 
 // create array for language groups
@@ -61,9 +65,10 @@ foreach($groups as $group) {
   // last character of group name
   $groupNumber = substr($group, -1);
   // group number as input value will be sent to Podio
-  echo "<label class='language".$groupLanguage."Group".$groupLevel."'>";
+  echo '<div class="row"><div class="col-md-12">';
+  echo "<label class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>";
   echo "<input type='radio' name='group' value='".$groupNumber."'>";
-  echo "<strong>".$group ."</strong><br/>";
+  echo "<strong>Grupa ".$groupNumber."</strong><br/>";
   
   // get all items with given group name
   $collection = PodioItem::filter($harmonogram_app_id, array(
@@ -95,10 +100,7 @@ foreach($groups as $group) {
 }
   echo "</table></input>";
   echo "</label>";
+  echo "</div></div>";
 }
-  // separate items
-    ?> </div>
-         </div>
-          <br/>
-<?
+
 ?>

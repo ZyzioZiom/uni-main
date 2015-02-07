@@ -10,6 +10,7 @@ $date = date("Y-m-d H:i");
 $name = $_POST["name"];
 $lastname = $_POST["lastname"];
 $phone = $_POST["phone"];
+$group = $_POST["group"];
 $languages = $_POST["language"];
 $email = $_POST["email"];
 $attended = $_POST["attended"];
@@ -73,6 +74,7 @@ $fields = new PodioItemFieldCollection(array(
   new PodioTextItemField(array("external_id" => "email", "values" => $email)),
   new PodioTextItemField(array("external_id" => "amount", "values" => $amount)),
   // new category field without any value
+   new PodioCategoryItemField(array("external_id" => "group")),
   new PodioCategoryItemField(array("external_id" => "languages")),
   new PodioCategoryItemField(array("external_id" => "paid")),
    new PodioCategoryItemField(array("external_id" => "attended", "values" => intval($attended))),
@@ -92,6 +94,9 @@ $item = new PodioItem(array(
   'app' => new PodioApp($app_id), // Attach to app with app_id
   'fields' => $fields
 ));
+
+// add chosen group to category
+$item->fields["group"]->add_value(intval($group));
 
 // add chosen language to category
 $item->fields["languages"]->add_value(intval($languages));

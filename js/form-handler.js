@@ -49,6 +49,7 @@ $('#choose-level-label').show();
 $('input[name=lang]:radio').click(function() {
 	$('input[name=language]:radio').prop('checked', false);
 	$('.LanguageDiv').hide();
+  hideGroups();
    
     
     $('.language-radio-label').removeClass("btn-success").addClass("btn-default");
@@ -86,61 +87,52 @@ $('input[name=lang]:radio').click(function() {
     if ($('#languageArabic').is(':checked')) {
 		$('#languageArabicDiv').show();
         $('#languageArabicLabel').removeClass("btn-default").addClass("btn-success");
-        // only one option, so make it checked already
-        $('#arabicInd').prop('checked',true);
+        
 	}
 });
 
+function hideGroups() {
+  $("#choose-group-label").addClass("hidden");
+  // hide all groups
+  $(".groupLabel").addClass("hidden");
+//  uncheck all groups
+  $('input[name=group]:radio').prop('checked', false);
+}
 
 // choose language group
 // language = level, lang = name
 
+
 $('input[name=language]').change(function() {
-    if (this.checked) {
-        var response = $('label[for="' + this.id + '"]').html();
-     
+  var level;
+  var lang;
+  
+hideGroups();
+  
+  if (this.checked) {
+        level = $('label[for="' + this.id + '"]').html();
+        
+//      get only two letters of level (ex. B2 or Za)
+      level = level.substr(0,2);
+
     }
   
 $('input[name=lang]').each(function() {
    if (this.checked) {
-        var lang = $('label[for="' + this.id + '"]').html();
-      
+//     get language name   
+     lang = $('label[for="' + this.id + '"]').html();
+  
      
-//     join language name and language level, cut them properly: TODO
-     var join = lang + " " + response;
-     var regexp = /^(.*)\s(.*)\s(.*)$/
-     var joined = join.replace(regexp, "$1 $2");
-     console.log(joined);
-    }
-  
-  
+//    create class selector
+     langClass = ".language" + lang + "Group" + level;
+     console.log(langClass);
+     
+     $(langClass).removeClass("hidden");
+      $("#choose-group-label").removeClass("hidden");
+   }
 });
 });
-//  $(".language-level-radio").change(function() {
-//    
-//     $("input[name=language]").each(function() {
-//     
-//     if (this.checked) {
-//       //  get label text of clicked input
-//        var text = $('label[for="' + this.id + '"]').html();
-//     }
-////  cut languageLevel from label text
-//  //var languageLevel = text.substr(0, 2);
-//  console.log(text);
-//     });
-//    
-//    
-//   $("input[name=lang]").each(function() {
-//     
-//     if (this.checked) {
-//    var languageName = $('label[for="' + this.id + '"]').val();
-//       console.log(languageName);
-//     }
-//       
-//     
-//    //$("#languageGroupChoose").html(languageName + " " + languageLevel);
-//});
-//});
+
 
 
 

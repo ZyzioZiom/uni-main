@@ -270,7 +270,10 @@
           
         <!-- Language groups -->
            <div class="form-group">
-             <div id="languageGroupChoose"></div>
+             <label id="choose-group-label" class="hidden"><br/>Wybierz grupę</label><br/>
+             <div id="languageGroupChoose">
+             <? include 'getgroups.php'; ?>
+             </div>
           </div>
           
           
