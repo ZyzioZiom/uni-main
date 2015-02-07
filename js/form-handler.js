@@ -92,35 +92,58 @@ $('input[name=lang]:radio').click(function() {
 });
 
 
-
-// get chosen language name
-
-  $(".language-radio").change(function() {
-      
-    if (this.checked) {
-    var languageName = $('label[for="' + this.id + '"]').html();
-    }
-});
-
-
-
 // choose language group
+// language = level, lang = name
 
+$('input[name=language]').change(function() {
+    if (this.checked) {
+        var response = $('label[for="' + this.id + '"]').html();
+     
+    }
   
-  $(".language-level-radio").click(function() {
-//  get label text of clicked input
-   var text = $('label[for="' + this.id + '"]').html();
+$('input[name=lang]').each(function() {
+   if (this.checked) {
+        var lang = $('label[for="' + this.id + '"]').html();
+      
+     
+//     join language name and language level, cut them properly: TODO
+     var join = lang + " " + response;
+     var regexp = /^(.*)\s(.*)\s(.*)$/
+     var joined = join.replace(regexp, "$1 $2");
+     console.log(joined);
+    }
   
-//  cut languageLevel from label text
-  var languageLevel = text.substring(0, 2);
   
-  chooseGroup();
 });
+});
+//  $(".language-level-radio").change(function() {
+//    
+//     $("input[name=language]").each(function() {
+//     
+//     if (this.checked) {
+//       //  get label text of clicked input
+//        var text = $('label[for="' + this.id + '"]').html();
+//     }
+////  cut languageLevel from label text
+//  //var languageLevel = text.substr(0, 2);
+//  console.log(text);
+//     });
+//    
+//    
+//   $("input[name=lang]").each(function() {
+//     
+//     if (this.checked) {
+//    var languageName = $('label[for="' + this.id + '"]').val();
+//       console.log(languageName);
+//     }
+//       
+//     
+//    //$("#languageGroupChoose").html(languageName + " " + languageLevel);
+//});
+//});
 
 
-chooseGroup = function() {
-$("#languageGroupChoose").html(languageName + " " + languageLevel);
-}
+
 // Ajax form
 
  $('#form').submit(function(submit) {
