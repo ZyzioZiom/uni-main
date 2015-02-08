@@ -23,13 +23,13 @@
   <body>
 <? include "top-body.php"; ?>
 <div id="content">
-  <div class="col-md-10 centered heading">
+  <div class="col-md-10 centered heading wheat">
      <div class="logo text-center"></div>
       <br/>
       <h1 class="text-center"><strong>Cennik warsztatów</strong></h1>
   </div>
   
-  <div class="col-md-4 col-md-offset-4 centered about">
+  <div class="col-md-4 col-md-offset-4 centered about wheat" style="font-size: 18px;">
     
     <table class="table">
     <tr>

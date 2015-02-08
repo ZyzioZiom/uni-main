@@ -1,4 +1,8 @@
 <?php include "setcookie.php"; ?>
+<? 
+// Load the cache process
+include("cache-news.php");
+?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -24,7 +28,7 @@
 <? include "top-body.php"; ?>
 <div id="content">
   <div class="row">
-  <div class="col-md-10 centered heading">
+  <div class="col-md-10 centered heading wheat">
      <div class="logo text-center"></div>
       <br/>
       
@@ -40,8 +44,8 @@
     
       <?php
 // enable error reports on screen
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 'On');  //On or Off
+//ini_set('error_reporting', E_ALL);
+//ini_set('display_errors', 'On');  //On or Off
 
 require_once "config.php";
 // include Podio API
@@ -170,3 +174,7 @@ foreach ($files as $file) {
 
   </body>
 </html>
+<?php
+// Save the cache
+include("cache_footer.php");
+?>

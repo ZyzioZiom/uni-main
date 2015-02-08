@@ -1,8 +1,3 @@
-<?php include "setcookie.php"; ?>
-<? 
-// Load the cache process
-include("cache-signup.php");
-?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -25,8 +20,62 @@ include("cache-signup.php");
     <![endif]-->
   </head>
   <body>
-<? include "top-body.php"; ?>
+<!-- Google Tag Manager --
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FPPX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P9FPPX');</script>
+<!-- End Google Tag Manager -->
+      
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand nav-link" href="./"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><p class="navbar-text"><a class="navbar-title nav-link" href="./">Warsztaty językowe</a></p></li>
+        
+      </ul>
+      
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li style="background: orange" ><a href="signup.php"><strong><span style="color: white;">ZAPISZ SIĘ</span></strong></a></li>
+        <li><a class="nav-link" href="harmonogram.php">HARMONOGRAM</a></li>
+        <li><a class="nav-link" href="news.php">AKTUALNOŚCI</a></li>
+        <li><a class="nav-link" href="prices.php">CENNIK</a></li>
+        <li><a class="nav-link" href="about.php">O WARSZTATACH</a></li>
+        <li><a href="https://www.facebook.com/lckrakow" target="_blank"><img src="img/FB-f-Logo__blue_100.png" style="height: 20px;" /></a></li>
+        
+        
+        </ul>  
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+  
+   
+ 
+
+
+  
+
+   
  
 
 
@@ -278,8 +327,9 @@ include("cache-signup.php");
            <div class="form-group">
              <label id="choose-group-label" class="hidden"><br/>Wybierz grupę</label><br/>
              <div id="languageGroupChoose">
-             <? include 'getgroups.php'; ?>
-             </div>
+             
+
+<div class="row"><div class="col-md-12"><label class='groupLabel languageAngielskiGroupA2 hidden'>  <input type='radio' name='group' value='1 required'><strong>Grupa 1</strong><br/><table><tr><td>Poniedziałek</td><td>08:00 - 09:30</td></tr><table><tr><td>Czwartek</td><td>12:00 - 13:00</td></tr></table></input></label></div></div><div class="row"><div class="col-md-12"><label class='groupLabel languageAngielskiGroupA2 hidden'>  <input type='radio' name='group' value='2 required'><strong>Grupa 2</strong><br/><table><tr><td>Poniedziałek</td><td>10:00 - 11:30</td></tr><table><tr><td>Środa</td><td>11:00 - 12:00</td></tr></table></input></label></div></div><div class="row"><div class="col-md-12"><label class='groupLabel languageArabskiGroupZa hidden'>  <input type='radio' name='group' value='2 required'><strong>Grupa 2</strong><br/><table><tr><td>Środa</td><td>13:00 - 15:00</td></tr></table></input></label></div></div><div class="row"><div class="col-md-12"><label class='groupLabel languageHiszpańskiGroupB1 hidden'>  <input type='radio' name='group' value='1 required'><strong>Grupa 1</strong><br/><table><tr><td>Wtorek</td><td>10:00 - 11:30</td></tr></table></input></label></div></div><div class="row"><div class="col-md-12"><label class='groupLabel languageNiemieckiGroupB2 hidden'>  <input type='radio' name='group' value='1 required'><strong>Grupa 1</strong><br/><table><tr><td>Wtorek</td><td>06:00 - 07:30</td></tr><table><tr><td>Poniedziałek</td><td>22:00 - 23:00</td></tr></table></input></label></div></div>             </div>
           </div>
           
           
@@ -299,16 +349,42 @@ include("cache-signup.php");
      
 
 
- <? include 'footer.php'; ?>  
+ <footer class="footer">
+      <div class="container fontface">
+        <h4>Nasi partnerzy</h4>
+        <div class="row">
+          <div class="col-md-4">
+          <a href="http://www.soul.edu.pl/" target="_blank"><img style="max-height: 50px;" src="img/soul-logo.jpg" /><span style="color: darkblue;">Szkoła językowa SOUL</span></a>
+          </div>
+          <div class="col-md-5">
+            
+          </div>
+          <div class="col-md-3">
+            
+             <a href="http://aiesec.pl/" target="_blank"><img style="max-width: 80%%; padding-bottom: 10px" src="img/powered-by-aiesec.png" />  </a>
+          </div>
+        </div>
+      <div class="row">
+       
+      </div>
+  
+      </div>  
+  
+    </footer>
+
+  
     </div>
-<? include 'bottom-scripts.php'; ?>
-    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery UI for effects -->
+    <!-- <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script> -->
+    <!-- form handler for validation and ajax request -->
+    <script src="js/form-handler.js"></script>
+     <script src="js/fade-content.js"></script>          
 
 
     
   </body>
 </html>
-<?php
-// Save the cache
-include("cache_footer.php");
-?>

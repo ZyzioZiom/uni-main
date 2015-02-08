@@ -23,7 +23,7 @@
   <body>
 <? include "top-body.php"; ?>
 <div id="content">
-  <div class="col-md-8 centered heading about">
+  <div class="col-md-8 centered heading about wheat">
       <div class="logo text-center"></div>
       <br/>
  
@@ -103,9 +103,9 @@ Byli członkowie (Alumni) są <strong>liderami w swoich organizacjach i firmach<
       </div>
  
   
-  
+ </div> 
    <? include 'footer.php'; ?>   
-</div>
+
     
   
 <? include 'bottom-scripts.php'; ?>

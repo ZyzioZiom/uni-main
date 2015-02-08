@@ -1,4 +1,8 @@
 <?php include "setcookie.php"; ?>
+<? 
+// Load the cache process
+include("cache-harmonogram.php");
+?>
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -48,7 +52,7 @@ catch (PodioError $e) {
     
 <? include "top-body.php"; ?>
 <div id="content">
-  <div class="col-md-10 centered heading">
+  <div class="col-md-10 centered heading wheat">
       <div class="logo text-center"></div>
       <br/>
      <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
@@ -65,7 +69,7 @@ catch (PodioError $e) {
 // weekdays
 $days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 
-// iterate through weekdays
+// iterate through weekdays Monday to Saturday
 for($weekday=1; $weekday<7; $weekday++) {
   // Get items from app with harmonogram_app_id
   $collection = PodioItem::filter($harmonogram_app_id, array(
@@ -73,11 +77,26 @@ for($weekday=1; $weekday<7; $weekday++) {
 	"sort_desc" => false,
 	"filters" => array(
 		"weekday" => $weekday)
-
+    
 	)); 
-
-
-
+  
+//
+//$collection = PodioItem::filter($harmonogram_app_id, array(
+//	"sort_by" => "hour2", // sort items by hour ascending
+//	"sort_desc" => false
+//));
+//// iterate through weekdays Monday to Saturday
+//for($weekday=1; $weekday<7; $weekday++) {
+//  
+//  foreach ($collection as $collection) {
+//    $items = $collection->fields["weekday"]->values;
+//    
+//    foreach ($items as $item) {
+//      
+//    print_r ($item->id);
+//      
+//    if ($item->id == intval($weekday)) {
+      
 ?> <div class="col-md-2 harmonogram-day"> 
 <?
 print "<h3 class='text-center' ><strong>".$days[$weekday]."</strong></h3><br/>";
@@ -91,6 +110,7 @@ foreach ($collection as $item) {
   $end_time = $item->fields["hour2"]->end_time;
 
   // add 1 hour to times (because of problems with UTC timezones on Podio)
+//  TODO: automatically switch between winter/summer timezone (UTC+1/UTC+2)
   $start_time->add(new DateInterval('PT1H'));
   $end_time->add(new DateInterval('PT1H'));
   
@@ -123,6 +143,7 @@ foreach ($collection as $item) {
 }
 ?>
 </div>
+
      <? include 'footer.php'; ?>   
    
   
@@ -132,3 +153,7 @@ foreach ($collection as $item) {
     
   </body>
 </html>
+<?php
+// Save the cache
+include("cache_footer.php");
+?>

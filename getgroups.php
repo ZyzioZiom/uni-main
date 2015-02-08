@@ -66,8 +66,8 @@ foreach($groups as $group) {
   $groupNumber = substr($group, -1);
   // group number as input value will be sent to Podio
   echo '<div class="row"><div class="col-md-12">';
-  echo "<label class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>";
-  echo "<input type='radio' name='group' value='".$groupNumber."'>";
+  echo "<label class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
+  echo "<input type='radio' name='group' value='".$groupNumber." required'>";
   echo "<strong>Grupa ".$groupNumber."</strong><br/>";
   
   // get all items with given group name

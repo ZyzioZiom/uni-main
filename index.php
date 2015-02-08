@@ -40,7 +40,7 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
-    <div class="col-md-10 centered fontface">
+    <div class="col-md-10 centered fontface wheat">
       
       
         <div class="col-md-2 text-center">
@@ -107,41 +107,47 @@
       
       
 <div class="row">
-    <div class="col-md-10 col-md-offset-1 fontface">
+    <div class="col-md-10 col-md-offset-1 fontface wheat">
       <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
- <!-- left column -->
+
     <div class="col-md-12">
+       <!-- left column -->
        <div class="col-md-6">
          <div class="row">
-         <div class="col-md-2 text-center h4">
+         <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon1.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">           
         zajęcia w formie konwersatoriów z native speakerami o międzynarodowym doświadczeniu
          </div>
          </div>
+      
          <div class="row">
-         <div class="col-md-2 text-center h4">
+         <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon2.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         warsztaty odbywają się na terenie Uniwersytetu Ekonomicznego w Krakowie
          </div> 
          </div>
+         
          <div class="row">
-         <div class="col-md-2 text-center h4">
+           <div class="displaytable">
+         <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon3.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         grupy składają się z maksymalnie 12 osób
          </div>
+           </div>
          </div>
+           
          <div class="row">
-         <div class="col-md-2 text-center h4">
+         <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon4.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         kursy regularne<br/>
         8 tygodni, 2 x 90min / tydzień<br/>
         indywidualne 2 x 60min
@@ -151,34 +157,34 @@
 <!-- right column -->      
       <div class="col-md-6">
         <div class="row">
-        <div class="col-md-2 text-center h4">
+        <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon5.png" />
          </div>
-        <div class="col-md-10 point">
+        <div class="col-md-9 point">
         możliwość wyboru indywidualnego toku nauczania 
         </div>
         </div>
         <div class="row">
-        <div class="col-md-2 text-center h4">
+        <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon6.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         w zależności od języka oferujemy zajęcia na poziomach: A1 - C1
          </div> 
         </div>
         <div class="row">
-        <div class="col-md-2 text-center h4">
+        <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon7.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         Language Tours - poznaj swojego lektora poza terenem uczelni
          </div>
         </div>
         <div class="row">
-        <div class="col-md-2 text-center h4">
+        <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon8.png" />
          </div>
-         <div class="col-md-10 point">
+         <div class="col-md-9 point">
         po ukończeniu kursu uczestnik otrzymuje certyfikat językowy
          </div>
       </div>
