@@ -133,14 +133,12 @@
          </div>
          
          <div class="row">
-           <div class="displaytable">
          <div class="col-md-3 text-center h4">
           <img class="icon" src="img/icon3.png" />
          </div>
          <div class="col-md-9 point">
         grupy składają się z maksymalnie 12 osób
          </div>
-           </div>
          </div>
            
          <div class="row">
