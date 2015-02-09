@@ -1,7 +1,7 @@
 <?php include "setcookie.php"; ?>
 <? 
 // Load the cache process
-include("cache-signup.php");
+include("cache.php");
 ?>
 
 <!DOCTYPE html>
@@ -276,7 +276,8 @@ include("cache-signup.php");
           
         <!-- Language groups -->
            <div class="form-group">
-             <label id="choose-group-label" class="hidden"><br/>Wybierz grupę</label><br/>
+             <hr/>
+             <!--<label id="choose-group-label" class="hidden"><br/>Wybierz grupę</label><br/>-->
              <div id="languageGroupChoose">
              <? include 'getgroups.php'; ?>
              </div>

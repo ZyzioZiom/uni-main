@@ -6297,7 +6297,7 @@ body {
   width: 100%;
   min-height: 100%;
   padding-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   font-family: Museo300;
   background: url(../img/bg3.jpg) #ffffff top center;
   background-size: cover;
@@ -6308,6 +6308,7 @@ body {
     background: url(../img/bg3.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 992px) {
@@ -6342,13 +6343,13 @@ body {
 .footer {
   background: #fff;
   margin-top: 20px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 @media (min-width: 768px) {
   .footer {
-    /* Set the fixed height of the footer here */
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
   }
 }
 .displaytable {

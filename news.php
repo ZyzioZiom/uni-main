@@ -1,7 +1,7 @@
 <?php include "setcookie.php"; ?>
 <? 
 // Load the cache process
-include("cache-news.php");
+include("cache.php");
 ?>
 
 <!DOCTYPE html>

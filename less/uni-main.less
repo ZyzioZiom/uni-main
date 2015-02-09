@@ -15,8 +15,8 @@ body {
   width: 100%;
   min-height: 100%;
   padding-top: 50px; // so navbar does not overlay content
+  margin-bottom: 0px;
   
-  margin-bottom: 100px;
   // use custom font on whole website
   .fontface;
   
@@ -29,6 +29,8 @@ body {
       background: url(../img/bg3.jpg) #fff top center;
       background-size: cover;
       background-attachment: fixed;
+      
+      margin-bottom: 100px;
     }
   
     @media (min-width: @screen-md-min) {
@@ -72,14 +74,13 @@ body {
 .footer {
   background: #fff;
   margin-top: 20px;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 
   @media (min-width: @screen-sm-min) {
-  /* Set the fixed height of the footer here */
-  //height: 100px;
-
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+  
   }
 
 

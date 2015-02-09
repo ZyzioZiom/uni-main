@@ -1,12 +1,9 @@
-
-<? // tutaj kod który pobiera grupy językowe i generuje ich kod
-
-
+<?
 // form-handler.js opisany ręcznie
 // pobierz języki z harmonogramu
 // pobierz wszystkie numery grup dla danego języka (po kropce)
 // dla każdej grupy odnajdź itemy w harmonogramie i wylistuj ich dni oraz godziny
-// zr
+
 
 require_once "config.php";
 // include Podio API
@@ -24,10 +21,6 @@ catch (PodioError $e) {
   // Something went wrong. Examine $e->body['error_description'] for a description of the error.
 	echo $e . "<br><br><br>";
   }
-
-//get language data from ajax request
-//$lang = $_GET['lang'];
-//$level = $_GET['level'];
 
 
 // weekdays
@@ -66,9 +59,11 @@ foreach($groups as $group) {
   $groupNumber = substr($group, -1);
   // group number as input value will be sent to Podio
   echo '<div class="row"><div class="col-md-12">';
-  echo "<label class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
-  echo "<input type='radio' name='group' value='".$groupNumber." required'>";
-  echo "<strong>Grupa ".$groupNumber."</strong><br/>";
+
+  echo "<label style='width: 100%;' class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
+  echo "<input type='radio' name='group' value='".$groupNumber."'>";
+  echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber."</strong></span><br/>";
+  
   
   // get all items with given group name
   $collection = PodioItem::filter($harmonogram_app_id, array(
@@ -88,17 +83,20 @@ foreach($groups as $group) {
     $end_time->add(new DateInterval('PT1H'));
     
     // print weekday and time
-    echo "<table>";
-    foreach ($item->fields["weekday"]->values as $day) {
-    echo "<tr><td>";
-      echo $day['text'];
     
-    }
-    echo "</td><td>";
+    foreach ($item->fields["weekday"]->values as $day) {
+    echo '<div class="row">';
+    echo '<div class="col-md-4">';
+      echo $day['text'];
+    echo '</div>';
+    
+    echo '<div class="col-md-8">';
       echo $start_time->format("H:i")." - ".$end_time->format('H:i');
-    echo "</td></tr>";
+    echo '</div>';
+    echo '</div>';
+    }
 }
-  echo "</table></input>";
+  
   echo "</label>";
   echo "</div></div>";
 }

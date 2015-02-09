@@ -36,6 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li><a class="nav-link" href="news.php">AKTUALNOŚCI</a></li>
         <li><a class="nav-link" href="prices.php">CENNIK</a></li>
         <li><a class="nav-link" href="about.php">O WARSZTATACH</a></li>
+        <li><a class="nav-link" href="partners.php">PARTNERZY</a></li>
+        <li><a class="nav-link" href="contact.php">KONTAKT</a></li>
         <li><a href="https://www.facebook.com/lckrakow" target="_blank"><img src="img/FB-f-Logo__blue_100.png" style="height: 20px;" /></a></li>
         
         
