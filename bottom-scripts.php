@@ -6,4 +6,5 @@
     <!-- <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script> -->
     <!-- form handler for validation and ajax request -->
     <script src="js/form-handler.js"></script>
-     <script src="js/fade-content.js"></script>      
+    <script src="js/fade-content.js"></script>
+    <script src="js/menu-highlight.js"></script>

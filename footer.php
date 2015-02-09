@@ -10,7 +10,7 @@
           </div>
           <div class="col-md-3">
             
-             <a href="http://aiesec.pl/" target="_blank"><img style="max-width: 80%%; padding-bottom: 10px" src="img/powered-by-aiesec.png" />  </a>
+             <a href="http://aiesec.pl/" target="_blank"><img class="footer-logo" src="img/powered-by-aiesec.png" />  </a>
           </div>
         </div>
       <div class="row">

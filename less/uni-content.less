@@ -61,15 +61,25 @@
 
 
 .icon {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   
-  @media (min-width: @screen-sm-min) {
-  width: 90%;
+  @media (min-width: @screen-md-min) {
+  max-width: 100px;
+    width: 90%;
   }
 }
 
 #thankyou-row {
   height: 100%;
   display: block;
+}
+.footer-logo {
+  max-width: 30%;
+  padding-bottom: 10px;
+    
+  @media (min-width: @screen-sm-min) {
+      max-width: 50%;
+    }
+      
 }
