@@ -125,7 +125,7 @@ $('input[name=lang]').each(function() {
      
 //    create class selector
      langClass = ".language" + lang + "Group" + level;
-     console.log(langClass);
+    
      
      $(langClass).removeClass("hidden");
       $("#choose-group-label").removeClass("hidden");

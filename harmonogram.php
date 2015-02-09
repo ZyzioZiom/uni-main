@@ -4,6 +4,7 @@
 include("cache.php");
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -109,10 +110,10 @@ foreach ($collection as $item) {
   $start_time = $item->fields["hour2"]->start_time;
   $end_time = $item->fields["hour2"]->end_time;
 
-  // add 1 hour to times (because of problems with UTC timezones on Podio)
-//  TODO: automatically switch between winter/summer timezone (UTC+1/UTC+2)
-  $start_time->add(new DateInterval('PT1H'));
-  $end_time->add(new DateInterval('PT1H'));
+//  Podio uses UTC time zone, so convert time to local
+  $start_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
+  $end_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
+
   
   echo '<div class="row">
           <div class="col-md-12 centered news-item">';
