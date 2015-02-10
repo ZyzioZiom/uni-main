@@ -61,7 +61,7 @@ foreach($groups as $group) {
   echo '<div class="row"><div class="col-md-12">';
 
   echo "<label style='width: 100%;' class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
-  echo "<input type='radio' name='group' value='".$groupNumber."'>";
+  echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."'>";
   echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber."</strong></span><br/>";
   
   

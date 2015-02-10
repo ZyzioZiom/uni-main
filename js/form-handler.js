@@ -46,8 +46,8 @@ $('#choose-level-label').show();
     
 
 // reset language level check when checking different language
-$('input[name=lang]:radio').click(function() {
-	$('input[name=language]:radio').prop('checked', false);
+$('input[name=language]:radio').change(function() {
+	$('input[name=language-level]:radio').prop('checked', false);
 	$('.LanguageDiv').hide();
   hideGroups();
    
@@ -91,43 +91,48 @@ $('input[name=lang]:radio').click(function() {
 	}
 });
 
+//Groups handling
+
 function hideGroups() {
   $("#choose-group-label").addClass("hidden");
   // hide all groups
   $(".groupLabel").addClass("hidden");
 //  uncheck all groups
   $('input[name=group]:radio').prop('checked', false);
+//  make hidden inputs not required
+  $('input[name=group]:radio').attr('required', false);
 }
 
 // choose language group
 // language = level, lang = name
 
 
-$('input[name=language]').change(function() {
-  var level;
-  var lang;
-  
-hideGroups();
-  
-  if (this.checked) {
-        level = $('label[for="' + this.id + '"]').html();
-        
-//      get only two letters of level (ex. B2 or Za)
-      level = level.substr(0,2);
+$('input[name=language-level]').change(function() {
+var level;
+var lang;
 
-    }
+hideGroups();
+
+if (this.checked) {
+  level = $('label[for="' + this.id + '"]').html();
+
+//get only two letters of level (ex. B2 or Za)
+  level = level.substr(0,2);
+}
   
-$('input[name=lang]').each(function() {
+$('input[name=language]').each(function() {
    if (this.checked) {
 //     get language name   
      lang = $('label[for="' + this.id + '"]').html();
   
      
 //    create class selector
-     langClass = ".language" + lang + "Group" + level;
-    
+     var  langClass = "language" + lang + "Group" + level;
+   
      
-     $(langClass).removeClass("hidden");
+     // make visible input required
+      $("input[id^=" + langClass + "]").attr("required", true);
+     $("." + langClass).removeClass("hidden");
       $("#choose-group-label").removeClass("hidden");
    }
 });
