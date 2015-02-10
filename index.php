@@ -40,7 +40,7 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
-    <div class="col-md-10 centered fontface wheat">
+    <div class="col-md-10 centered fontface fontcolor">
       
       
         <div class="col-md-2 text-center">
@@ -107,7 +107,7 @@
       
       
 <div class="row">
-    <div class="col-md-10 col-md-offset-1 fontface wheat">
+    <div class="col-md-10 col-md-offset-1 fontface fontcolor">
       <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
 

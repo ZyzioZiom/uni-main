@@ -53,7 +53,7 @@ catch (PodioError $e) {
     
 <? include "top-body.php"; ?>
 <div id="content">
-  <div class="col-md-10 centered heading wheat">
+  <div class="col-md-10 centered heading fontcolor">
       <div class="logo text-center"></div>
       <br/>
      <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
@@ -63,7 +63,7 @@ catch (PodioError $e) {
     
     
 
-  <div class="col-md-10 col-md-offset-1 centered news-content" style="display:table;"> 
+  <div class="col-md-12 col-lg-10 col-lg-offset-1 centered news-content" style="display:table;"> 
     
      
 <?

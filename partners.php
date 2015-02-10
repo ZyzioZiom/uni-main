@@ -24,20 +24,20 @@
 <? include "top-body.php"; ?>
 <div id="content">
   <div class="row">
-  <div class="col-md-10 centered heading wheat">
+  <div class="col-md-10 centered heading fontcolor">
      <div class="logo text-center"></div>
       <br/>
-      <h1 class="text-center"><strong>Nasi partnerzy</strong></h1>
+      <h3 class="text-center"><strong>Nasi partnerzy</strong></h1>
   </div>
   </div>
   
   <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <div class="col-md-4" style="text-align: right;">
-              <a href="http://www.soul.edu.pl/" target="_blank"><img style="max-height: 50px;" src="img/soul-logo.jpg" /></a>
+              <a href="http://www.soul.edu.pl/" target="_blank"><img style="max-height: 50px;" src="img/soul-logo.jpg" />
             </div>
               <div class="col-md-8">
-                <h3 class="wheat" style="text-align: left;">Szkoła językowa SOUL</h3>
+                <h3 class="fontcolor" style="text-align: left;">Szkoła językowa SOUL</h3></a>
               </div>
           </div>
   </div>

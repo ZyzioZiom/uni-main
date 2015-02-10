@@ -28,7 +28,7 @@ include("cache.php");
 <? include "top-body.php"; ?>
 <div id="content">
   <div class="row">
-  <div class="col-md-10 centered heading wheat">
+  <div class="col-md-10 centered heading fontcolor">
      <div class="logo text-center"></div>
       <br/>
       

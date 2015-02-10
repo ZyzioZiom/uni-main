@@ -6299,13 +6299,13 @@ body {
   padding-top: 50px;
   margin-bottom: 0px;
   font-family: Museo300;
-  background: url(../img/bg3.jpg) #ffffff top center;
+  background: url(../img/bg4.jpg) #ffffff top center;
   background-size: cover;
   background-attachment: fixed;
 }
 @media (min-width: 768px) {
   body {
-    background: url(../img/bg3.jpg) #ffffff top center;
+    background: url(../img/bg4.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 100px;
@@ -6313,14 +6313,14 @@ body {
 }
 @media (min-width: 992px) {
   body {
-    background: url(../img/bg3.jpg) #ffffff top center;
+    background: url(../img/bg4.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
   }
 }
 @media (min-width: 1200px) {
   body {
-    background: url(../img/bg3.jpg) #ffffff top center;
+    background: url(../img/bg4.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -6328,8 +6328,8 @@ body {
 .fontface {
   font-family: Museo300;
 }
-.wheat {
-  color: #F5DEB3;
+.fontcolor {
+  color: white;
 }
 .centered {
   float: none;
@@ -6357,7 +6357,7 @@ body {
 }
 .header {
   padding-top: 20px;
-  color: #F5DEB3;
+  color: white;
 }
 @media (min-width: 768px) {
   .header {
@@ -6368,24 +6368,37 @@ body {
   }
 }
 .logo-header {
-  background: url(../img/logo-wheat.png) no-repeat center center;
+  background: url(../img/logo-white.png) no-repeat center center;
   background-size: contain;
   height: 100px;
 }
 @media (min-width: 768px) {
   .logo-header {
-    background: url(../img/logo-wheat.png) no-repeat center center;
+    background: url(../img/logo-white.png) no-repeat center center;
     background-size: contain;
     height: 140px;
   }
 }
 .logo {
-  background: url(../img/logo-wheat.png) no-repeat center center;
+  background: url(../img/logo-white.png) no-repeat center center;
   background-size: contain;
   height: 100px;
 }
 @media (min-width: 768px) {
   .logo {
+    margin-top: 100px;
+    height: 140px;
+  }
+}
+@media (min-width: 992px) {
+  .logo {
+    margin-top: 50px;
+    height: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-top: 0px;
     height: 140px;
   }
 }

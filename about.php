@@ -23,7 +23,7 @@
   <body>
 <? include "top-body.php"; ?>
 <div id="content">
-  <div class="col-md-8 centered heading about wheat">
+  <div class="col-md-8 centered heading about fontcolor">
       <div class="logo text-center"></div>
       <br/>
  

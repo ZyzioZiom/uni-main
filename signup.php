@@ -31,7 +31,7 @@ include("cache.php");
 
 
     <div id="thankyou-row" class="row hidden">
-      <div class="col-md-8 centered thankyou fontface wheat">
+      <div class="col-md-8 centered thankyou fontface fontcolor">
     <h1 id="thankyou-msg" class="thankyou-msg text-center"><span></span>, dziękujemy za zapisanie się na warsztaty!</h1>
     <p class="thankyou-msg text-center">Teraz sprawdź swoją skrzynkę pocztową.</p>
       </div>
@@ -42,8 +42,8 @@ include("cache.php");
       <div class="col-md-10 centered heading">
          <div class="logo text-center"></div>
       <br/>
-        <h1 class="text-center  wheat">Wypełnij formularz już teraz i zapisz się na warsztaty</h1>
-        <h2 class="text-center  wheat">Liczba miejsc ograniczona!</h2>
+        <h1 class="text-center  fontcolor">Wypełnij formularz już teraz i zapisz się na warsztaty</h1>
+        <h2 class="text-center  fontcolor">Liczba miejsc ograniczona!</h2>
         <br/>
         <div class="col-md-6 centered">
         <form id="form" class="form" enctype="multipart/form-data">
