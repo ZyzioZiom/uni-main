@@ -40,7 +40,9 @@
     </div>
     </div>
    <br/> <!-- FLAGS -->
-    <div class="col-md-10 centered fontface fontcolor">
+  
+  <div class="row">
+    <div class="col-md-10 centered fontface fontcolor" style="margin-top: 40px;">
       
       
         <div class="col-md-2 text-center">
@@ -104,11 +106,11 @@
           
          
         </div>
-      
+    </div>  
       
 <div class="row">
-    <div class="col-md-10 col-md-offset-1 fontface fontcolor">
-      <h2 style="text-align: center;">Tylko 199 zł za 8 tygodni warsztatów</h2>
+    <div class="col-md-10 col-md-offset-1 fontface fontcolor" style="padding-top: 40px;">
+      <h2 class="text-center" style="padding-bottom: 40px;">Tylko 199 zł za 8 tygodni warsztatów</h2>
     
 
     <div class="col-md-12">
@@ -206,7 +208,7 @@
   
     <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
 
-      <a href="signup.php"><div class="col-md-5 btn btn-danger">ZAPISZ SIE</div></a>
+      <a href="signup.php"><div class="col-md-5 btn btn-orange">ZAPISZ SIĘ</div></a>
     <a href="about.php"><div class="col-md-5 col-md-offset-1 btn btn-info">DOWIEDZ SIĘ WIĘCEJ</div></a>
     </div>
       </div>

@@ -33,12 +33,23 @@
   
   <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
+            <div class="row">
             <div class="col-md-12">
               <a href="http://www.soul.edu.pl/" target="_blank"><img style="max-height: 150px;" src="img/logo-soul-white2.png" />
+              <h3 class="fontcolor">Szkoła językowa SOUL</h3></a>
             </div>
-              <div class="col-md-12">
-                <h3 class="fontcolor">Szkoła językowa SOUL</h3></a>
-              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+              <h3 class="fontcolor"></h3>
+              <h3 class="fontcolor"></h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="fontcolor"></h3>
+              <h3 class="fontcolor"></h3>
+            </div>
+            </div>
+            
           </div>
   </div>
 

@@ -30,12 +30,7 @@ include("cache.php");
  
 
 
-    <div id="thankyou-row" class="row hidden">
-      <div class="col-md-8 centered thankyou fontface fontcolor">
-    <h1 id="thankyou-msg" class="thankyou-msg text-center"><span></span>, dziękujemy za zapisanie się na warsztaty!</h1>
-    <p class="thankyou-msg text-center">Teraz sprawdź swoją skrzynkę pocztową.</p>
-      </div>
-    </div>
+    <div id="thankyou"></div>
    
 
       <div id="content" class="row fontface">
@@ -55,7 +50,7 @@ include("cache.php");
 								oninput="setCustomValidity('')">
 			
            </div>
-          <div id="next" class="btn btn-primary submit">DALEJ</div>
+          <div id="next" class="btn btn-orange submit">DALEJ</div>
         
         <div id="form-next" class="hidden">
           
@@ -277,7 +272,6 @@ include("cache.php");
         <!-- Language groups -->
            <div class="form-group">
              <hr/>
-             <!--<label id="choose-group-label" class="hidden"><br/>Wybierz grupę</label><br/>-->
              <div id="languageGroupChoose">
              <? include 'getgroups.php'; ?>
              </div>

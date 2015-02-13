@@ -86,41 +86,23 @@ catch (PodioError $e) {
 // weekdays
 $days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 
+
+$collection = PodioItem::filter($harmonogram_app_id, array(
+	"sort_by" => "hour2", // sort items by hour ascending
+	"sort_desc" => false
+));
 // iterate through weekdays Monday to Saturday
 for($weekday=1; $weekday<7; $weekday++) {
-  // Get items from app with harmonogram_app_id
-  $collection = PodioItem::filter($harmonogram_app_id, array(
-	"sort_by" => "hour2", // sort items by hour ascending
-	"sort_desc" => false,
-	"filters" => array(
-		"weekday" => $weekday)
-    
-	)); 
-  
-//
-//$collection = PodioItem::filter($harmonogram_app_id, array(
-//	"sort_by" => "hour2", // sort items by hour ascending
-//	"sort_desc" => false
-//));
-//// iterate through weekdays Monday to Saturday
-//for($weekday=1; $weekday<7; $weekday++) {
-//  
-//  foreach ($collection as $collection) {
-//    $items = $collection->fields["weekday"]->values;
-//    
-//    foreach ($items as $item) {
-//      
-//    print_r ($item->id);
-//      
-//    if ($item->id == intval($weekday)) {
-      
-?> <div class="col-md-2 harmonogram-day"> 
+
+?>
+ <div class="col-md-2 harmonogram-day">
 <?
-print "<h4 class='text-center' ><strong>".$days[$weekday]."</strong></h4><br/>";
-  
-// Iterate through all items in current weekday
+//  print column header 
+  print "<h4 class='text-center' ><strong>".$days[$weekday]."</strong></h4><br/>";
+
 foreach ($collection as $item) {
-// assign item fields
+  
+//  get data of all objects
   $group = $item->title;
   $description = $item->fields["classroom"]->values;
   $start_time = $item->fields["hour2"]->start_time;
@@ -130,6 +112,14 @@ foreach ($collection as $item) {
   $start_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
   $end_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
 
+// dig deeper into item arrays
+$item = $item->fields["weekday"]->values;
+
+
+foreach ($item as $item) {
+
+// if category id (id corresponding to weekdays), print group in this day column
+if ($item["id"] == $weekday) {
   
   echo '<div class="row class-item '.$group.' hidden">
         <div class="col-md-12 centered news-item">';
@@ -147,19 +137,20 @@ foreach ($collection as $item) {
   if (!empty($description)) {
   echo "<p>".$description."</p>";
   }
+  echo '</div></div>';
+}
   
-  // separate items
-    ?> </div>
+}
+}
+  
+    
+  
+?> </div> <?
+} 
+  ?>
          </div>
           
-<?
-}
-?> 
-   
-    </div> <?
-}
-?>
-</div>
+
 
      <? include 'footer.php'; ?>   
    

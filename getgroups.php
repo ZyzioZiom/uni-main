@@ -67,7 +67,7 @@ foreach($groups as $group) {
   
   // get all items with given group name
   $collection = PodioItem::filter($harmonogram_app_id, array(
-	"sort_by" => "title",
+	"sort_by" => "weekday",
 	"sort_desc" => false,
     "filters" => array(
       "title" => $group)

@@ -68,7 +68,11 @@ body {
 #content {
   display: none;
   min-height: 100%;
-  margin-bottom: 120px;
+  
+  @media (min-width: @screen-sm-min) {
+    // place for stcky footer
+    margin-bottom: 140px;
+  }
 }
 
 .footer {
@@ -78,6 +82,7 @@ body {
 
   @media (min-width: @screen-sm-min) {
     margin-top: 20px;
+    padding-top: 20px;
     position: absolute;
     bottom: 0;
   

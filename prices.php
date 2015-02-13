@@ -44,19 +44,7 @@
       <td>359 zł</td>
     </tr>
     </table>
-    <table class="table">
-    <tr>
-      <strong>Dla członków AIESEC</strong>
-    </tr>
-    <tr>
-      <td>Zajęcia grupowe</td>
-      <td>129 zł</td>
-    </tr>
-    <tr>
-      <td>Zajęcia indywidualne</td>
-      <td>299 zł</td>
-    </tr>
-    </table>
+    
     
     <table class="table">
     <tr>
@@ -100,7 +88,7 @@
   
     <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
 
-      <a href="signup.php"><div class="col-sm-12 col-md-6 col-md-offset-3 btn btn-danger">ZAPISZ SIE</div></a>
+      <a href="signup.php"><div class="col-md-6 col-md-offset-3 btn btn-warning">ZAPISZ SIĘ</div></a>
     
     </div>
       </div>  

@@ -94,9 +94,9 @@ $('input[name=language]:radio').change(function() {
 //Groups handling
 
 function hideGroups() {
-  $("#choose-group-label").addClass("hidden");
   // hide all groups
-  $(".groupLabel").addClass("hidden");
+//  $(".groupLabel").addClass("hidden");
+  $(".groupLabel").fadeOut("fast");
 //  uncheck all groups
   $('input[name=group]:radio').prop('checked', false);
 //  make hidden inputs not required
@@ -106,7 +106,7 @@ function hideGroups() {
 // choose language group
 // language = level, lang = name
 
-
+// change visible groups on level change
 $('input[name=language-level]').change(function() {
 var level;
 var lang;
@@ -132,8 +132,11 @@ $('input[name=language]').each(function() {
      
      // make visible input required
       $("input[id^=" + langClass + "]").attr("required", true);
+     
+//     show matched groups
      $("." + langClass).removeClass("hidden");
-      $("#choose-group-label").removeClass("hidden");
+     $("." + langClass).css("display", "none");
+     $("." + langClass).fadeIn("fast");
    }
 });
 });
@@ -141,27 +144,23 @@ $('input[name=language]').each(function() {
 
 
 
-// Ajax form
+// Ajax form - sign up
 
- $('#form').submit(function(submit) {
- submit.preventDefault();
-
-
+$('#form').submit(function(submit) {
+submit.preventDefault();
 
 // insert form data into variable
 var dataString = $("#form").serialize(); 
 
 
-   
-//alert(dataString);
- $.ajax({
+$.ajax({
   type: "POST",
   url: "register.php",
   data: dataString, // form data as data to send
-  beforeSend: function(){ // while sending
+  beforeSend: function() { // while sending
      $("body").css("cursor", "progress"); // loading cursor
      $("#submit").val("CHWILECZKĘ...");
-    
+
    },
 })
  
@@ -169,36 +168,32 @@ var dataString = $("#form").serialize();
     alert("Wystąpił błąd! Spróbuj jeszcze raz. \n" + msg);
     // error event tracking
     ga('send', 'event', 'Form', 'Submit', 'Błąd wysłania formularza');
-    mixpanel.track("Błąd wysłania formularza");
   })
  .complete(function() {
  	$("body").css("cursor", "auto"); // back to normal cursor
  })
   .done(function( msg ) { // data sent with success
-	// show output
-	//alert(msg); 
+	
    
 	// Analytics conversion event
 //	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na warsztaty');
    
-	// Mixpanel conversion event
-//	mixpanel.track("Zapisanie się na warsztaty");
-	// hide elements and show thank you message
+
+	// hide elements and redirect to thank you message
 	$("body").css("cursor", "auto"); // back to normal cursor
 	$("#content").fadeOut(function() {
-      $("#thankyou-row").removeClass("hidden");
+      
+    // get name input to display on thank you
+	var displayName = $("#name").val(); 
+    
+    redirect = "thankyou.php?name=" + displayName;
+
+//   redirect to thank you message
+    window.location.assign(redirect);
     });
-    // send virtual pageview (for remarketing, conversion tracking)
-//    _gaq.push(['_setAccount', 'UA-34751885-2']); // set AIESEC account
-//    _gaq.push(['_trackPageview', '/thankyou']);
+
      
     
 	});
    
-   
-	// get name input to display on thank you
-	var displayName = $("#name").val();
-	// print name between <span> in #thankyou-msg
-	$("#thankyou-msg span").html(displayName);
-	
   });

@@ -35,30 +35,27 @@
     <tr>
       <strong>Biuro</strong>
     </tr>
+   
     <tr>
       <td>Telefon:</td>
-      <td>000</td>
+      <td>12 293 50 78</td>
     </tr>
     <tr>
       <td>E-mail:</td>
-      <td>@@@</td>
+      <td><a href="mailto:learnbyplay.krakow@gmail.com"><span class="fontcolor">learnbyplay.krakow@gmail.com</span></a></td>
     </tr>
+    
     </table>
    
-   <table class="table">
+    <table class="table">
     <tr>
-      <strong>Koordynator: Ewa Chrobak</strong>
+      <td>
+    <strong>AIESEC Kraków Oddział Lokalny</strong><br/>
+    ul. Rakowicka 27, 31-510 Kraków<br/>
+    Pawilon Sportowy pok 228-229  
+      </td>
     </tr>
-    <tr>
-      <td>Telefon:</td>
-      <td>000</td>
-    </tr>
-    <tr>
-      <td>E-mail:</td>
-      <td>@@@</td>
-    </tr>
-    </table>
-    
+   </table>
   </div>
   
       
