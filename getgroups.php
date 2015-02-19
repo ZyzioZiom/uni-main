@@ -32,7 +32,11 @@ $groups = array();
   // Get all groups by names
   $collection = PodioItem::filter($harmonogram_app_id, array(
 	"sort_by" => "title",
-	"sort_desc" => false
+	"sort_desc" => false,
+    "filters" => array( 
+      // jebnąłem się przy modyfikowaniu nazwy i takie mi zrobiło <smuteczek>
+      // show only groups where there is still available space
+      "czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac" => 1) 
 	)); 
 
 // Iterate through all groups and save them to array
@@ -62,7 +66,7 @@ foreach($groups as $group) {
 
   echo "<label style='width: 100%;' class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
   echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."'>";
-  echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber."</strong></span><br/>";
+  echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber." - <span style='color: green;'>wolne miejsca</span></strong></span><br/>";
   
   
   // get all items with given group name
