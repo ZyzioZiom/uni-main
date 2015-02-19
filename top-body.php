@@ -18,6 +18,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WDSLR6');</script>
 <!-- End Google Tag Manager -->
 
+<!--facebook remarketing pixel
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+-->
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand nav-link" href="./"><img class="text-center" src="img/logo.png" style="width:60px; margin: 0 auto;" /></a>
+      <a class="navbar-brand nav-link" href="./"><img class="text-center" src="img/logo-black-small.png" style="width:60px; margin: 0 auto;" /></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

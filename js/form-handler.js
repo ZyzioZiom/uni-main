@@ -172,12 +172,7 @@ $.ajax({
  .complete(function() {
  	$("body").css("cursor", "auto"); // back to normal cursor
  })
-  .done(function( msg ) { // data sent with success
-	
-   
-	// Analytics conversion event
-//	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na warsztaty');
-   
+  .done(function( msg ) { // data sent with success   
 
 	// hide elements and redirect to thank you message
 	$("body").css("cursor", "auto"); // back to normal cursor

@@ -26,7 +26,6 @@ $name = $_GET["name"];
 ?>
     
 <div id="content">
-  <!--here facebook remarketing pixel code-->
 
 
 <div id="thankyou-row" class="row">
@@ -43,6 +42,9 @@ $name = $_GET["name"];
 </div>
 <? include 'bottom-scripts.php'; ?>
     
-
+<script>
+	// Analytics conversion event
+//	ga('send', 'event', 'Form', 'Submit', 'Zapisanie się na warsztaty');    
+</script>
   </body>
 </html>

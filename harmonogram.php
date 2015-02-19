@@ -56,6 +56,7 @@ catch (PodioError $e) {
   <div class="col-md-10 centered heading fontcolor">
       <div class="logo text-center"></div>
       <br/>
+    <h3 class="text-center">Warsztaty trwają od 16 marca przez 8 tygodni</h3>
      <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
 
   </div>
@@ -118,7 +119,7 @@ $item = $item->fields["weekday"]->values;
 
 foreach ($item as $item) {
 
-// if category id (id corresponding to weekdays), print group in this day column
+// if category id is corresponding to current iteration of weekday), print group in current day's column
 if ($item["id"] == $weekday) {
   
   echo '<div class="row class-item '.$group.' hidden">

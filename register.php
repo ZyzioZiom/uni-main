@@ -109,7 +109,7 @@ $item->save();
 
 
 // welcome mail sender 
-//require "mailer.php";
+require "mailer.php";
 
 
 ?>

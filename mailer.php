@@ -2,8 +2,14 @@
 require 'PHPMailer/PHPMailerAutoload.php';
 
 // get welcome email template
-$welcome_email = file_get_contents('mail/welcome_email.php');
+if ($attended == 1) {
+  $welcome_email = file_get_contents('mail/welcome_email_discount.php');
+} else {
+  $welcome_email = file_get_contents('mail/welcome_email.php');
+}
+
 // replace name in heading
+  
 $welcome_email = str_replace('%name%', $name, $welcome_email); 
 $mail = new PHPMailer;
 
@@ -17,14 +23,14 @@ $mail->Password = $smtp_password;                           // SMTP password (in
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->From = 'university@aiesec.org.pl';
+$mail->From = 'learnybplay.krakow@gmail.com';
 $mail->FromName = 'AIESEC University';
 $mail->addAddress($email, $name);     // Add a recipient              // Name is optional
-$mail->addReplyTo('university@aiesec.org.pl', 'AIESEC University');
+$mail->addReplyTo('learnbyplay.krakow@gmail.com', 'AIESEC University');
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Wszystko, co musisz wiedzieć o naszych warsztatach';
+$mail->Subject = $name.", witaj w AIESEC University!";
 $mail->Body    = $welcome_email;
 $mail->AltBody = '';
 

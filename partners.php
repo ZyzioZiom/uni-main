@@ -37,18 +37,68 @@
             <div class="col-md-12">
               <a href="http://www.soul.edu.pl/" target="_blank"><img style="max-height: 150px;" src="img/logo-soul-white2.png" />
               <h3 class="fontcolor">Szkoła językowa SOUL</h3></a>
+              <hr />
             </div>
             </div>
+            <!-- middle partners column -->
+          <div class="col-md-12">
+            
+            <!-- first row of partners -->
             <div class="row">
-            <div class="col-md-6">
-              <h3 class="fontcolor"></h3>
-              <h3 class="fontcolor"></h3>
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/cinnabon.png" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/atlanticsports.png" /></a>
+              </div> 
+            </div>  
+              
+             <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/interbook.jpg" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/cukier.png" /></a>
+              </div>
+            </div> 
+               
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/dagrasso.png" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/b4.jpg" /></a>
+              </div>  
+            </div>  
+           
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/cwflogo.jpg" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/diva.png" /></a>
+              </div> 
             </div>
-            <div class="col-md-6">
-              <h3 class="fontcolor"></h3>
-              <h3 class="fontcolor"></h3>
+              
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/parkwodny.jpg" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/pik.png" /></a>
+              </div>  
+            </div>
+              
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/shakebake.png" /></a>
+              </div>  
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/wedel.jpg" /></a>
+              </div>  
             </div>
             </div>
+            
             
           </div>
   </div>
