@@ -27,19 +27,19 @@ catch (PodioError $e) {
 $days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 
 // create array for language groups
-$groups = array();
+$groupsActive = array();
 // create array for language groups which are disabled
-$groups2 = array();
+$groupsDisabled = array();
 
 
   // Get all groups by names
   $collection = PodioItem::filter($harmonogram_app_id, array(
 	"sort_by" => "title",
-	"sort_desc" => false,
+	"sort_desc" => false/*,
     "filters" => array( 
       // jebnąłem się przy modyfikowaniu nazwy i takie mi zrobiło <smuteczek>
       // show only groups where there is still available space
-      "czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac" => 1) 
+      "czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac" => 1) */
 	)); 
 
 // Iterate through all groups and save them to array
@@ -47,15 +47,27 @@ foreach ($collection as $item) {
 // assign group name to variable
   $group = $item->title;  
   
+  $groupActive = $item->fields["czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac"]->values;
+  $groupActive = $groupActive[0]["id"];
+  
+  
+// put active and disabled groups in different arrays
+  
+  if ($groupActive == 1) { // active group
 //  put group name is not in array already, put it there
-  if(!in_array($group, $groups)){
-        $groups[]=$group;
-  }  
+    if (!in_array($group, $groupsActive)) {
+      $groupsActive[] = $group;
+    }
+  } else { // disabled group
+    if (!in_array($group, $groupsDisabled)) {
+      $groupsDisabled[] = $group;
+    }
+  }
 }
 
-// now print all found groups with their times
+// now print all found active groups with their times
 // group = group name (ex. Niemiecki B2.1)
-foreach($groups as $group) {
+foreach($groupsActive as $group) {
 
   
   
@@ -72,19 +84,11 @@ foreach($groups as $group) {
 
   echo "<label style='width: 100%;' class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
   
-  // groupspace = 1: group is active to choose, groupspace = 2: group is disabled (full)
-//  if ($groupSpace == 1) {
 
   echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."'>";
     
   echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber." - <span style='color: green;'>wolne miejsca</span></strong></span><br/>";
-    
-//  } else { // if group is not active, make input disabled
-//
-//  echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."' disabled>";  
-//        
-//  echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber." - <span style='color: red;'>brak miejsc</span></strong></span><br/>";
-//  }
+
   
 
   // get all items with given group name
@@ -100,9 +104,9 @@ foreach($groups as $group) {
     $start_time = $item->fields["hour2"]->start_time;
     $end_time = $item->fields["hour2"]->end_time;
 
-    // add 1 hour to times (because of problems with UTC timezones on Podio)
-    $start_time->add(new DateInterval('PT1H'));
-    $end_time->add(new DateInterval('PT1H'));
+    //  Podio uses UTC time zone, so convert time to local
+    $start_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
+    $end_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
     
     // print weekday and time
     
@@ -123,34 +127,12 @@ foreach($groups as $group) {
   echo "</div></div>";
 }
 
-
-
-// --------------------------------- DISABLED GROUPS --------------------------------------
- // Get all groups by names
-  $collection2 = PodioItem::filter($harmonogram_app_id, array(
-	"sort_by" => "title",
-	"sort_desc" => false,
-    "filters" => array( 
-      // jebnąłem się przy modyfikowaniu nazwy i takie mi zrobiło <smuteczek>
-      // show only groups where there is still available space
-      "czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac" => 2) 
-	)); 
-
-// Iterate through all groups and save them to array
-foreach ($collection2 as $item) {
-// assign group name to variable
-  $group = $item->title;  
-  
-//  put group name is not in array already, put it there
-  if(!in_array($group, $groups2)){
-        $groups2[]=$group;
-  }  
-}
-
-// now print all found groups with their times
+// ------------------------------------------------------------------
+// now print all found disabled groups with their times
 // group = group name (ex. Niemiecki B2.1)
-foreach($groups2 as $group) {
-    
+foreach($groupsDisabled as $group) {
+
+  
   
   // get first word from group name
   $groupLanguage = strtok($group, " ");
@@ -165,30 +147,29 @@ foreach($groups2 as $group) {
 
   echo "<label style='width: 100%;' class='groupLabel language".$groupLanguage."Group".$groupLevel." hidden'>  ";
   
-  
-  echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."' disabled required>";
-   
-  
+
+   echo "<input id='language".$groupLanguage."Group".$groupLevel.".".$groupNumber."' type='radio' name='group' value='".$groupNumber."' disabled required>";  
+        
   echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber." - <span style='color: red;'>brak miejsc</span></strong></span><br/>";
-    
+ 
   
 
   // get all items with given group name
-  $collection2 = PodioItem::filter($harmonogram_app_id, array(
+  $collection = PodioItem::filter($harmonogram_app_id, array(
 	"sort_by" => "weekday",
 	"sort_desc" => false,
     "filters" => array(
       "title" => $group)
     )); 
   
-  foreach($collection2 as $item) {
+  foreach($collection as $item) {
     $group = $item->title;  
     $start_time = $item->fields["hour2"]->start_time;
     $end_time = $item->fields["hour2"]->end_time;
 
-    // add 1 hour to times (because of problems with UTC timezones on Podio)
-    $start_time->add(new DateInterval('PT1H'));
-    $end_time->add(new DateInterval('PT1H'));
+    //  Podio uses UTC time zone, so convert time to local
+    $start_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
+    $end_time->setTimeZone(new DateTimeZone('Europe/Warsaw'));
     
     // print weekday and time
     
@@ -208,5 +189,4 @@ foreach($groups2 as $group) {
   echo "</label>";
   echo "</div></div>";
 }
-
 ?>

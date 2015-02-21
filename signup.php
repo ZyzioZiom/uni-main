@@ -279,7 +279,7 @@ include("cache.php");
           
           
           <br/>
-				<input id="submit" class="btn btn-danger submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
+				<input id="submit" class="btn btn-orange submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
 				
           
      
