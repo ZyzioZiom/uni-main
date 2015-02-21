@@ -100,6 +100,16 @@
             </div>
             
             
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#"><img class="partners-logo" src="img/partners/placnowy.jpg" /></a>
+              </div>  
+              <div class="col-md-6">
+                
+              </div>  
+            </div>
+            </div>
+            
           </div>
   </div>
 

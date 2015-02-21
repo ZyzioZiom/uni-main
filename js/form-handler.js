@@ -165,7 +165,9 @@ $.ajax({
 })
  
  .fail(function(msg) {
-    alert("Wystąpił błąd! Spróbuj jeszcze raz. \n" + msg);
+    
+    var displayName = $("#name").val(); 
+    alert(displayName +", wystąpił błąd! Prawdopodobnie wszystko zadziałało tak jak trzeba, ale dla pewności spróbuj jeszcze raz.");
     // error event tracking
     ga('send', 'event', 'Form', 'Submit', 'Błąd wysłania formularza');
   })

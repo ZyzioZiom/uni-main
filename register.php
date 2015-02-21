@@ -74,10 +74,11 @@ $fields = new PodioItemFieldCollection(array(
   new PodioTextItemField(array("external_id" => "email", "values" => $email)),
   new PodioTextItemField(array("external_id" => "amount", "values" => $amount)),
   // new category field without any value
-   new PodioCategoryItemField(array("external_id" => "group")),
+  new PodioCategoryItemField(array("external_id" => "group")),
   new PodioCategoryItemField(array("external_id" => "languages")),
   new PodioCategoryItemField(array("external_id" => "paid")),
-   new PodioCategoryItemField(array("external_id" => "attended", "values" => intval($attended))),
+  new PodioCategoryItemField(array("external_id" => "payment-message")),
+  new PodioCategoryItemField(array("external_id" => "attended", "values" => intval($attended))),
   // url parameters
   //new PodioTextItemField(array("external_id" => "landingpageversion", "values" => $landingpage_version)),
   new PodioTextItemField(array("external_id" => "utmsource", "values" => $utm_source)),
@@ -102,14 +103,15 @@ $item->fields["group"]->add_value(intval($group));
 $item->fields["languages"]->add_value(intval($languages));
 // set paid to NO
 $item->fields["paid"]->add_value(2);
-
+// set received payment message to NO
+$item->fields["payment-message"]->add_value(2);
 
 // Save the new item
 $item->save();
 
 
 // welcome mail sender 
-require "mailer.php";
+include "mailer.php";
 
 
 ?>

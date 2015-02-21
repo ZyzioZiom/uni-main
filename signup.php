@@ -79,7 +79,7 @@ include("cache.php");
         </div>
           
         <div class="form-group">
-          <label>Czy uczestniczyłeś już wcześniej w warsztatach AIESEC University?</label><br/>
+          <label>Przysługuje mi zniżka (patrz <a href="prices.php"><span style="color: white;">cennik</span></a>)</label><br/>
           
           <input type="radio" id="attendedYes" name="attended" value="1">
                  <label for="attendedYes" class="radio-list-label">Tak</label>

@@ -31,7 +31,7 @@ $name = $_GET["name"];
 <div id="thankyou-row" class="row">
       <div class="col-md-8 centered thankyou fontface fontcolor">
     <h1 id="thankyou-msg" class="thankyou-msg text-center"><span><? echo $name; ?></span>, dziękujemy za zapisanie się na warsztaty!</h1>
-    <p class="thankyou-msg text-center">Teraz sprawdź swoją skrzynkę pocztową.</p>
+    <p class="thankyou-msg text-center">Wkrótce skontaktujemy się z Tobą odnośnie płatności za zajęcia. <br /> Tymczasem w skrzynce pocztowej czeka na Ciebie wiadomość.</p>
       </div>
 </div>
  
