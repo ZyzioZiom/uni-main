@@ -13,9 +13,11 @@ function expandForm() {
 	});
 	$("#form-next").removeClass("hidden");
 	$("#form-next").css("display", "none");
-	$("#form-next").slideDown();
+	$("#form-next").slideDown(function() {
+      $("#lastname").focus();
+    });
 //  send Analytics event
-//  ga('send', 'event', 'Form', 'Expand', 'Rozwinięcie formularza');
+  ga('send', 'event', 'Form', 'Expand', 'Rozwinięcie formularza (kliknięcie przycisku DALEJ)');
 }
 
 // expand form on button click
@@ -95,8 +97,8 @@ $('input[name=language]:radio').change(function() {
 
 function hideGroups() {
   // hide all groups
-//  $(".groupLabel").addClass("hidden");
-  $(".groupLabel").fadeOut("fast");
+  $(".groupLabel").addClass("hidden");
+//  $(".groupLabel").slideUp("fast");
 //  uncheck all groups
   $('input[name=group]:radio').prop('checked', false);
 //  make hidden inputs not required
@@ -136,7 +138,7 @@ $('input[name=language]').each(function() {
 //     show matched groups
      $("." + langClass).removeClass("hidden");
      $("." + langClass).css("display", "none");
-     $("." + langClass).fadeIn("fast");
+     $("." + langClass).slideDown("fast");
    }
 });
 });

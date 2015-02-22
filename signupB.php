@@ -50,7 +50,7 @@ include("cache.php");
 								oninput="setCustomValidity('')">
 			
            </div>
-          <div id="next" class="btn btn-orange submit">DALEJ</div>
+          <div id="next" class="btn btn-primary submit">DALEJ</div>
         
         <div id="form-next" class="hidden">
           
@@ -284,7 +284,7 @@ include("cache.php");
           
           
           <br/>
-				<input id="submit" class="btn btn-orange submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
+				<input id="submit" class="btn btn-primary submit" type="submit" name="submit" value="ZAPISZ SIĘ">	
 				
           
      

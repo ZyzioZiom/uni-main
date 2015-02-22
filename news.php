@@ -71,6 +71,7 @@ for ($sticky=1; $sticky < 3; $sticky++) {
   $collection = PodioItem::filter($news_app_id, array(
 	"sort_by" => "last_edit_on", // sort items by last edited (newest first)
 	"sort_desc" => true,
+    "limit" => 100,
 	"filters" => array(
 		"published" => 1, // show only with position 1 ("TAK") in published (Opublikować?)
 		"sticky" => $sticky)

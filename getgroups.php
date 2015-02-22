@@ -35,12 +35,14 @@ $groupsDisabled = array();
   // Get all groups by names
   $collection = PodioItem::filter($harmonogram_app_id, array(
 	"sort_by" => "title",
-	"sort_desc" => false/*,
+	"sort_desc" => false,
+    "limit" => 100/*,
     "filters" => array( 
       // jebnąłem się przy modyfikowaniu nazwy i takie mi zrobiło <smuteczek>
       // show only groups where there is still available space
       "czy-w-grupie-sa-wolne-miejsca-i-mozna-sie-zapisywac" => 1) */
 	)); 
+
 
 // Iterate through all groups and save them to array
 foreach ($collection as $item) {
@@ -64,6 +66,7 @@ foreach ($collection as $item) {
     }
   }
 }
+
 
 // now print all found active groups with their times
 // group = group name (ex. Niemiecki B2.1)

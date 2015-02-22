@@ -26,7 +26,7 @@ $mail->Port = 587;                                    // TCP port to connect to
 $mail->From = 'university@aiesec.org.pl';
 $mail->FromName = 'AIESEC University';
 $mail->addAddress($email, $name);     // Add a recipient              // Name is optional
-$mail->addReplyTo('university@aiesec.org.pl', 'AIESEC University');
+$mail->addReplyTo('learnbyplay.krakow@gmail.com', 'AIESEC University');
 
 $mail->isHTML(true);                                  // Set email format to HTML
 

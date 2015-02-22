@@ -6555,6 +6555,21 @@ body {
     border-bottom: 0;
   }
 }
+.group-color-A1 {
+  background: rgba(255, 180, 180, 0.3);
+}
+.group-color-A2 {
+  background: rgba(180, 255, 180, 0.3);
+}
+.group-color-B1 {
+  background: rgba(180, 180, 255, 0.3);
+}
+.group-color-B2 {
+  background: rgba(255, 255, 180, 0.3);
+}
+.group-color-C1 {
+  background: rgba(180, 255, 255, 0.3);
+}
 .class-item {
   padding-bottom: 10px;
 }

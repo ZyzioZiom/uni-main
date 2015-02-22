@@ -4,7 +4,7 @@
     	<!-- NAME: COLORFIELD -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>*|MC:SUBJECT|*</title>
+        <title>Witaj w AIESEC University</title>
         
     <style type="text/css">
 		body,#bodyTable,#bodyCell{
@@ -736,14 +736,14 @@ Do zobaczenia na warsztatach,
 			                                     
 			                                    <tbody><tr>
 			                                        <td align="center" valign="top" class="mcnFollowIconContent" style="padding-right:10px; padding-bottom:5px;">
-			                                            <a href="https://www.facebook.com/lckrakow" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
+			                                            <a href="https://www.facebook.com/events/691446714301558" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-96.png" alt="Facebook" class="mcnFollowBlockIcon" width="48" style="width:48px; max-width:48px; display:block;"></a>
 			                                        </td>
 			                                    </tr>
 			                                    
 			                                    
 			                                    <tr>
 			                                        <td align="center" valign="top" class="mcnFollowTextContent" style="padding-right:10px; padding-bottom:9px;">
-			                                            <a href="https://www.facebook.com/lckrakow" target="_blank" style="color: #6B6B6B;font-family: Tahoma, Verdana, Segoe, sans-serif;font-size: 11px;font-weight: normal;text-align: center;text-decoration: none;">Facebook</a>
+			                                            <a href="https://www.facebook.com/events/691446714301558" target="_blank" style="color: #6B6B6B;font-family: Tahoma, Verdana, Segoe, sans-serif;font-size: 11px;font-weight: normal;text-align: center;text-decoration: none;">Facebook</a>
 			                                        </td>
 			                                    </tr>
 			                                    

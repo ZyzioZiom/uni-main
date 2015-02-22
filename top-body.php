@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
       <ul class="nav navbar-nav navbar-right">
-        <li style="background: orange" ><a href="signup.php"><strong><span style="color: white;">ZAPISZ SIĘ</span></strong></a></li>
+        <li id="signup-nav" style="background: orange" ><a href="signup.php"><strong><span style="color: white;">ZAPISZ SIĘ</span></strong></a></li>
         <li><a class="nav-link" href="harmonogram.php">HARMONOGRAM</a></li>
         <li><a class="nav-link" href="news.php">AKTUALNOŚCI</a></li>
         <li><a class="nav-link" href="prices.php">CENNIK</a></li>

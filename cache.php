@@ -2,7 +2,7 @@
 class Simple_Cache {
  
  // Number of seconds a page should remain cached for
- public $cache_expires = 300; // 5 minutes
+ public $cache_expires = 3600; // 3600 second = 1 hour
  
  // Path to the cache folder
  public $cache_folder = "cache/";

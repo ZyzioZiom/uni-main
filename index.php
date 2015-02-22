@@ -208,7 +208,7 @@
   
     <div class="col-md-6 col-md-offset-3 centered text-centered bottom-buttons">
 
-      <a href="signup.php"><div class="col-md-5 btn btn-orange">ZAPISZ SIĘ</div></a>
+      <a href="signup.php"><div class="col-md-5 btn btn-danger">ZAPISZ SIĘ</div></a>
     <a href="about.php"><div class="col-md-5 col-md-offset-1 btn btn-info">DOWIEDZ SIĘ WIĘCEJ</div></a>
     </div>
       </div>

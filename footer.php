@@ -12,22 +12,22 @@
             <!-- first row of partners -->
             <div class="row">
             <div class="col-md-12">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/cinnabon.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/atlanticsports.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/interbook.jpg" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/cukier.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/dagrasso.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/b4.jpg" /></a>
               </div>  
               
@@ -37,22 +37,22 @@
             <!-- second row of partners -->
             <div class="row">
             <div class="col-md-12">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/cwflogo.jpg" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/diva.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/parkwodny.jpg" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/pik.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/shakebake.png" /></a>
               </div>  
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6">
                 <a href="#"><img class="footer-partners" src="img/partners/wedel.jpg" /></a>
               </div>  
               

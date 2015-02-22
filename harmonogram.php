@@ -90,7 +90,8 @@ $days = array(NULL, "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", 
 
 $collection = PodioItem::filter($harmonogram_app_id, array(
 	"sort_by" => "hour2", // sort items by hour ascending
-	"sort_desc" => false
+	"sort_desc" => false,
+    "limit" => 100,
 ));
 // iterate through weekdays Monday to Saturday
 for($weekday=1; $weekday<7; $weekday++) {
@@ -105,6 +106,10 @@ foreach ($collection as $item) {
   
 //  get data of all objects
   $group = $item->title;
+  $groupNumber = substr($group, -1);
+  $group = substr($group, 0, -2);
+  $groupLevel = substr($group, -2, 2);
+  
   $description = $item->fields["classroom"]->values;
   $start_time = $item->fields["hour2"]->start_time;
   $end_time = $item->fields["hour2"]->end_time;
@@ -122,11 +127,11 @@ foreach ($item as $item) {
 // if category id is corresponding to current iteration of weekday), print group in current day's column
 if ($item["id"] == $weekday) {
   
-  echo '<div class="row class-item '.$group.' hidden">
+  echo '<div class="row class-item '.$group.'.'.$groupNumber.' group-color-'.$groupLevel.' hidden">
         <div class="col-md-12 centered news-item">';
   // print group name
   if (!empty($group)) {
-  echo "<p><strong>".$group."</strong></p>";
+  echo "<p><strong>".$group." gr. ".$groupNumber."</strong></p>";
   }
   
   // print hours
