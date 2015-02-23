@@ -8,9 +8,13 @@ if ($attended == 1) {
   $welcome_email = file_get_contents('mail/welcome_email.php');
 }
 
-// replace name in heading
-  
+// replace variables in mail content
 $welcome_email = str_replace('%name%', $name, $welcome_email); 
+$welcome_email = str_replace('%lastname%', $lastname, $welcome_email);
+$welcome_email = str_replace('%amount%', intval($amount), $welcome_email);
+
+
+
 $mail = new PHPMailer;
 
 $mail->SMTPDebug = 3;                               // Enable verbose debug output

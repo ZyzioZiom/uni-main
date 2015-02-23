@@ -32,7 +32,7 @@
       <h1 class="text-center">Warsztaty językowe z native speakerami</h1>
       
       
-      <h3 class="text-center">8 zł za godzinę</h3>
+      <h3 class="text-center">8 zł za godzinę, w centrum Krakowa</h3>
 
       
 

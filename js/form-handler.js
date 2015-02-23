@@ -46,6 +46,11 @@ $('#languageEnglishDiv').show();
 $('#languageEnglishLabel').removeClass("btn-default").addClass("btn-success");
 $('#choose-level-label').show();
     
+//check french
+//$('#languageFrench').prop('checked', true);
+//$('#languageFrenchDiv').show();
+//$('#languageFrenchLabel').removeClass("btn-default").addClass("btn-success");
+//$('#choose-level-label').show();
 
 // reset language level check when checking different language
 $('input[name=language]:radio').change(function() {

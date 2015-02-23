@@ -103,8 +103,8 @@ $item->fields["group"]->add_value(intval($group));
 $item->fields["languages"]->add_value(intval($languages));
 // set paid to NO
 $item->fields["paid"]->add_value(2);
-// set received payment message to NO
-$item->fields["payment-message"]->add_value(2);
+// set received payment message to YES (it's done by mailer)
+$item->fields["payment-message"]->add_value(1);
 
 // Save the new item
 $item->save();

@@ -49,9 +49,14 @@ foreach($groupsActive as $group) {
   echo "<span style='margin-left: 10px;'><strong>Grupa ".$groupNumber." - <span style='color: green;'>wolne miejsca</span></strong></span><br/>";
 
   
-foreach($group as $collection) {
-  
-  
+
+  // get all items with given group name
+  $collection = PodioItem::filter($harmonogram_app_id, array(
+	"sort_by" => "weekday",
+	"sort_desc" => false,
+    "filters" => array(
+      "title" => $group)
+    )); 
   
   foreach($collection as $item) {
     $group = $item->title;  
@@ -80,7 +85,7 @@ foreach($group as $collection) {
   echo "</label>";
   echo "</div></div>";
 }
-}
+
 // ------------------------------------------------------------------
 // now print all found disabled groups with their times
 // group = group name (ex. Niemiecki B2.1)
@@ -142,5 +147,5 @@ foreach($groupsDisabled as $group) {
   
   echo "</label>";
   echo "</div></div>";
-
+}
 ?>

@@ -1,7 +1,7 @@
 <?php include "setcookie.php"; ?>
 <? 
 // Load the cache process
-include("cache.php");
+include("cache_signupC.php");
 ?>
 
 <!DOCTYPE html>
@@ -111,10 +111,7 @@ include("cache.php");
           <label id="languageSpanishLabel" class="language-radio-label btn btn-default" for="languageSpanish">Hiszpański</label>
 
         <input type="radio" id="languageArabic" class="language-radio" name="language" value="ar">
-          <label id="languageArabicLabel" class="language-radio-label btn btn-default" for="languageArabic">Arabski</label>
-
-
-        </div>
+       </div>
       </div>
         
 
@@ -136,9 +133,11 @@ include("cache.php");
 
         <input type="radio" id="englishC1" class="language-level-radio english-radio" name="language-level" value="4">
           <label id="" class="language-level-radio english-radio" for="englishC1">C1 Advanced</label><br/>  
-
+<!--
         <input type="radio" id="englishInd" class="language-level-radio english-radio" name="language-level" value="5">
-          <label id="" class="language-level-radio english-radio" for="englishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>                </div>
+          <label id="" class="language-level-radio english-radio" for="englishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>    -->
+
+</div>
 
 
         <!-- German --><!--

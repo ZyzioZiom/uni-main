@@ -687,7 +687,19 @@
 	<li>startujemy 16 marca</li>
 	<li>warsztaty trwają 8 tygodni</li>
 	<li>harmonogram zajęć i aktualności znajdziesz na naszej stronie <a href="http://aiesec.pl/uni/" target="_blank">http://aiesec.pl/uni/</a></li>
-	<li>wkrótce skontaktujemy się z Tobą odnośnie uregulowania płatności za kurs</li>
+  
+	<li>aby dokonać płatności za warsztaty, wyślij przelew w wysokości <strong>%amount% zł</strong> na konto:
+        <hr />
+        Stowarzyszenie AIESEC Polska Oddział Lokalny Kraków<br/>
+        ul. Rakowicka 27<br/>
+        31-510 Kraków<br/>
+        <br/>
+        <strong>Numer rachunku:</strong> 77 1140 1010 0000 5468 7000 1009 (mBank oddział korporacyjny)<br/>
+        <br/>
+        <strong>Tytuł przelewu:</strong> <i>%name% %lastname%.Darownizna na cele statutowe.Uni</i>
+  
+  
+    </li>
 </ul>
 <br>
 Do zobaczenia na warsztatach,

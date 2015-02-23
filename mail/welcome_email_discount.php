@@ -604,11 +604,11 @@
 }</style></head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
         <center>
-            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" bgcolor="#d5e0e7">
                 <tr>
                     <td align="center" valign="top" id="bodyCell">
                         <!-- BEGIN TEMPLATE // -->
-                        <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer">
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer" bgcolor="#d5e0e7">
                             <tr>
                                 <td align="center" valign="top">
                                     <!-- BEGIN PREHEADER // -->
@@ -688,7 +688,18 @@
 	<li>warsztaty trwają 8 tygodni</li>
 	<li>harmonogram zajęć i aktualności znajdziesz na naszej stronie <a href="http://aiesec.pl/uni/" target="_blank">http://aiesec.pl/uni/</a></li>
 	<li><strong>aby potwierdzić swoje prawo do żniżki, w odpowiedzi na tą wiadomość wyślij nam dokument potwierdzający Twoją działalność w organizacji studenckiej, skan legitymacji studenckiej UEK lub certyfikat z ostatniego kursu AIESEC University</strong></li>
-	<li>wkrótce skontaktujemy się z Tobą odnośnie uregulowania płatności za kurs</li>
+	<li>aby dokonać płatności za warsztaty, po wysłaniu dokumentu potwierdzającego wyślij przelew w wysokości <strong>%amount% zł</strong> na konto:
+        <hr />
+        Stowarzyszenie AIESEC Polska Oddział Lokalny Kraków<br/>
+        ul. Rakowicka 27<br/>
+        31-510 Kraków<br/>
+        <br/>
+        <strong>Numer rachunku:</strong> 77 1140 1010 0000 5468 7000 1009 (mBank oddział korporacyjny)<br/>
+        <br/>
+        <strong>Tytuł przelewu:</strong> <i>%name% %lastname%.Darownizna na cele statutowe.Uni</i>
+  
+  
+    </li>
 </ul>
 <br>
 Do zobaczenia na warsztatach,

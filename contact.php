@@ -1,5 +1,10 @@
  <?php include "setcookie.php"; ?>
 
+<? 
+// Load the cache process
+include("cache_contact.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -77,3 +82,7 @@
 
   </body>
 </html>
+<?php
+// Save the cache
+include("cache_footer.php");
+?>
