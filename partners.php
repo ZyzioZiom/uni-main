@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-<? include "top-body.php"; ?>
+<?php include "top-body.php"; ?>
 <div id="content">
   <div class="row">
   <div class="col-md-10 centered heading fontcolor">
@@ -114,9 +114,9 @@
   </div>
 
   
-<? include 'footer.php'; ?>
+<?php include 'footer.php'; ?>
 </div>
-<? include 'bottom-scripts.php'; ?>
+<?php include 'bottom-scripts.php'; ?>
     
 
   </body>

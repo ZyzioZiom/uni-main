@@ -1,7 +1,17 @@
-<?php include "setcookie.php"; ?>
-<? 
+<?php 
+
+//// enable error reports on screen
+//ini_set('error_reporting', E_ALL);
+//ini_set('display_errors', 1);  //On or Off
+////echo PHP_VERSION . "<br>";
+
+include "setcookie.php";
+ 
 // Load the cache process
-include("cache_signup.php");
+include "cache_signup.php";
+
+// Podio authentication
+include "getauthenticate.php";
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +35,7 @@ include("cache_signup.php");
     <![endif]-->
   </head>
   <body>
-<? include "top-body.php"; ?>
+<?php include "top-body.php"; ?>
 
  
 
@@ -136,9 +146,10 @@ include("cache_signup.php");
 
         <input type="radio" id="englishC1" class="language-level-radio english-radio" name="language-level" value="4">
           <label id="" class="language-level-radio english-radio" for="englishC1">C1 Advanced</label><br/>  
-
-       <!-- <input type="radio" id="englishInd" class="language-level-radio english-radio" name="language-level" value="5">
-          <label id="" class="language-level-radio english-radio" for="englishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>       -->         
+        
+        <input type="radio" id="englishInd" class="language-level-radio english-radio hidden" name="language-level" value="5" disabled>
+          <label id="" class="language-level-radio english-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
         
         </div>
 
@@ -183,8 +194,9 @@ include("cache_signup.php");
         <input type="radio" id="frenchC1" class="language-level-radio french-radio" name="language-level" value="16">
           <label id="" class="language-level-radio" for="frenchC1">C1 Advanced</label><br/>  
 
-        <input type="radio" id="frenchInd" class="language-level-radio french-radio" name="language-level" value="17">
-          <label id="" class="language-level-radio" for="frenchInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
+        <input type="radio" id="frenchInd" class="language-level-radio french-radio hidden" name="language-level" value="17" disabled>
+          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
         </div>   
             
 
@@ -257,8 +269,10 @@ include("cache_signup.php");
         <input type="radio" id="spanishC1" class="language-level-radio spanish-radio" name="language-level" value="34">
           <label id="" class="language-level-radio" for="spanishC1">C1 Advanced</label><br/>  
 
-        <input type="radio" id="spanishInd" class="language-level-radio spanish-radio" name="language-level" value="35">
-          <label id="" class="language-level-radio" for="spanishInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
+        <input type="radio" id="spanishInd" class="language-level-radio spanish-radio hidden" name="language-level" value="35" disabled>
+          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
+        
         </div>
              
                  
@@ -280,7 +294,7 @@ include("cache_signup.php");
              <hr/>
              <div id="languageGroupChoose">
               
-             <? include 'getgroups.php'; ?>
+             <?php include 'getgroups.php'; ?>
              </div>
           </div>
           
@@ -301,9 +315,9 @@ include("cache_signup.php");
      
 
 
- <? include 'footer.php'; ?>  
+ <?php include 'footer.php'; ?>  
     </div>
-<? include 'bottom-scripts.php'; ?>
+<?php include 'bottom-scripts.php'; ?>
     
 
 

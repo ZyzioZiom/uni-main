@@ -696,7 +696,7 @@
         <br/>
         <strong>Numer rachunku:</strong> 77 1140 1010 0000 5468 7000 1009 (mBank oddział korporacyjny)<br/>
         <br/>
-        <strong>Tytuł przelewu:</strong> <i>%name% %lastname%.Darownizna na cele statutowe.Uni</i>
+        <strong>Tytuł przelewu:</strong> <i>%name% %lastname%.Darowizna na cele statutowe.Uni</i>
   
   
     </li>

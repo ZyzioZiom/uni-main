@@ -1,5 +1,5 @@
 <?php include "setcookie.php"; ?>
-<? 
+<?php 
 // Load the cache process
 include("cache_harmonogram.php");
 ?>
@@ -51,7 +51,7 @@ catch (PodioError $e) {
   
 ?>
     
-<? include "top-body.php"; ?>
+<?php include "top-body.php"; ?>
 <div id="content">
   <div class="col-md-10 centered heading fontcolor">
       <div class="logo text-center"></div>
@@ -158,12 +158,12 @@ if ($item["id"] == $weekday) {
           
 
 
-     <? include 'footer.php'; ?>   
+     <?php include 'footer.php'; ?>   
    
   
 
     
-<? include 'bottom-scripts.php'; ?>
+<?php include 'bottom-scripts.php'; ?>
   
 <script src="js/harmonogram-language.js"></script>
     

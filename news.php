@@ -1,5 +1,5 @@
 <?php include "setcookie.php"; ?>
-<? 
+<?php
 // Load the cache process
 include("cache_news.php");
 ?>
@@ -25,7 +25,7 @@ include("cache_news.php");
     <![endif]-->
   </head>
   <body>
-<? include "top-body.php"; ?>
+<?php include "top-body.php"; ?>
 <div id="content">
   <div class="row">
   <div class="col-md-10 centered heading fontcolor">
@@ -167,10 +167,10 @@ foreach ($files as $file) {
     </div>
     </div>
   
-   <? include 'footer.php'; ?>   
+   <?php include 'footer.php'; ?>   
   
     </div>
-<? include 'bottom-scripts.php'; ?>
+<?php include 'bottom-scripts.php'; ?>
     
 
   </body>

@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>
-<? include "top-body.php"; ?>
+<?php include "top-body.php"; ?>
     
 <?
 $name = $_GET["name"];
@@ -30,17 +30,18 @@ $name = $_GET["name"];
 
 <div id="thankyou-row" class="row">
       <div class="col-md-8 centered thankyou fontface fontcolor">
-    <h1 id="thankyou-msg" class="thankyou-msg text-center"><span><? echo $name; ?></span>, dziękujemy za zapisanie się na warsztaty!</h1>
+    <h1 id="thankyou-msg" class="thankyou-msg text-center"><span><?php echo $name; ?></span>, dziękujemy za zapisanie się na warsztaty!</h1>
     <p class="thankyou-msg text-center">W skrzynce pocztowej czeka na Ciebie wiadomość z ważnymi informacjami.</p>
+    <p class="thankyou-msg text-center">A gdyby jej nie było, sprawdź folder spamu lub zakładkę Oferty w Gmailu.</p>
       </div>
 </div>
  
   
 
   
-<? include 'footer.php'; ?>
+<?php include 'footer.php'; ?>
 </div>
-<? include 'bottom-scripts.php'; ?>
+<?php include 'bottom-scripts.php'; ?>
     
 <script>
 	// Analytics conversion event

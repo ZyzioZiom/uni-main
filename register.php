@@ -37,14 +37,15 @@ else { // set amount for group classes
   applyDiscount($amount, $attended, $amountWhenAttended);
 }
 
-// get URL parameters data from cookies
+//// get URL parameters data from cookies
 $utm_source = $_COOKIE["utm_source"];
 $utm_medium = $_COOKIE["utm_medium"];
 $utm_campaign = $_COOKIE["utm_campaign"];
 $utm_term = $_COOKIE["utm_term"];
 $utm_content = $_COOKIE["utm_content"];
 $gclid = $_COOKIE["gclid"];
-
+$original_referer = $_COOKIE["original_referer"];
+$current_referer = $_COOKIE["current_referer"];
 
 // include Podio API
 require_once 'podio-php-4.0.2/PodioAPI.php';
@@ -87,7 +88,8 @@ $fields = new PodioItemFieldCollection(array(
   new PodioTextItemField(array("external_id" => "utmterm", "values" => $utm_term)),
   new PodioTextItemField(array("external_id" => "utmcontent", "values" => $utm_content)),
   new PodioTextItemField(array("external_id" => "gclid", "values" => $gclid)),
-  
+  new PodioTextItemField(array("external_id" => "originalreferer", "values" => $original_referer)),
+  new PodioTextItemField(array("external_id" => "lastreferer", "values" => $current_referer))
   
 ));
 

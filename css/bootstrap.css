@@ -232,7 +232,6 @@ th {
     background: #fff !important;
   }
   .navbar {
-    display: none;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -6381,7 +6380,6 @@ body {
   margin: 0 auto;
 }
 #content {
-  display: none;
   min-height: 100%;
 }
 @media (min-width: 768px) {

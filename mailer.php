@@ -22,7 +22,7 @@ $mail->CharSet = "UTF-8";
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mandrillapp.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'aiesec.lckrk@gmail.com';                 // SMTP username
+$mail->Username = 'patryk.kalinowski@gmail.com';                 // SMTP username
 $mail->Password = $smtp_password;                           // SMTP password (in config file)
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
