@@ -104,25 +104,27 @@ include "getauthenticate.php";
         <div class="choose-language">
         <input type="radio" id="languageEnglish" class="language-radio" name="language" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
           <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski</label>
+		<input type="radio" id="languageEnglish" class="language-radio" name="language" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
+          <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski biznesowy</label>
 <!--
         <input type="radio" id="languageGerman" class="language-radio" name="language" value="de">
           <label id="languageGermanLabel" class="language-radio-label btn btn-default" for="languageGerman">Niemiecki</label>
 -->
         <input type="radio" id="languageFrench" class="language-radio" name="language" value="fr">
           <label id="languageFrenchLabel" class="language-radio-label btn btn-default" for="languageFrench">Francuski</label>
-
+<!--
         <input type="radio" id="languageItalian" class="language-radio" name="language" value="it">
           <label id="languageItalianLabel" class="language-radio-label btn btn-default" for="languageItalian">Włoski</label>
 
         <input type="radio" id="languageRussian" class="language-radio" name="language" value="ru">
           <label id="languageRussianLabel" class="language-radio-label btn btn-default" for="languageRussian">Rosyjski</label>
-
+-->
         <input type="radio" id="languageSpanish" class="language-radio" name="language" value="es">
           <label id="languageSpanishLabel" class="language-radio-label btn btn-default" for="languageSpanish">Hiszpański</label>
-
+<!--
         <input type="radio" id="languageArabic" class="language-radio" name="language" value="ar">
           <label id="languageArabicLabel" class="language-radio-label btn btn-default" for="languageArabic">Arabski</label>
-
+-->
 
         </div>
       </div>
