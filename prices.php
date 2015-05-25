@@ -1,5 +1,5 @@
  <?php include "setcookie.php"; ?>
-<?php 
+<? 
 // Load the cache process
 include("cache_prices.php");
 ?>
@@ -24,7 +24,7 @@ include("cache_prices.php");
     <![endif]-->
   </head>
   <body>
-<?php include "top-body.php"; ?>
+<? include "top-body.php"; ?>
 <div id="content">
   <div class="col-md-10 centered heading fontcolor">
      <div class="logo text-center"></div>
@@ -46,6 +46,10 @@ include("cache_prices.php");
       <td>Zajęcia indywidualne</td>
       <td>359 zł</td>
     </tr>
+    <tr>
+      <td>Angielski biznesowy</td>
+      <td>449 zł</td>
+    </tr>
     </table>
     
     
@@ -62,7 +66,7 @@ include("cache_prices.php");
       <td>699 zł</td>
     </tr>
     </table>
-    
+ <!--   
      <table class="table">
     <tr>
       <td>
@@ -76,6 +80,7 @@ include("cache_prices.php");
       </td>
     </tr>
     </table>
+-->
   </div>
   
       
@@ -98,9 +103,9 @@ include("cache_prices.php");
   
 
   
-<?php include 'footer.php'; ?>
+<? include 'footer.php'; ?>
 </div>
-<?php include 'bottom-scripts.php'; ?>
+<? include 'bottom-scripts.php'; ?>
     
 
   </body>

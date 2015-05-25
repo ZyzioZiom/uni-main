@@ -23,8 +23,7 @@
   <body>
     
     
-<?php include "top-body.php"; ?>
-    
+<? include "top-body.php"; ?>
 <div id="content">
   <div class="col-md-12 header">
   <div class="col-md-10 centered">
@@ -41,7 +40,9 @@
   
 <div class="row">
   <div class="col-md-10 centered fontface fontcolor" style="margin-top: 40px;">
-      
+    <div class="col-md-2 text-center">
+        <!--po prostu do skasowania-->
+    </div> 
     <div class="col-md-2 text-center">
       <div class="col-md-12">
         <h4>ANGIELSKI</h4>
@@ -59,7 +60,7 @@
         <img class="flag" src="img/flaga-fr.png" />
       </div>
     </div>
-
+<!--
     <div class="col-md-2 text-center">
       <div class="col-md-12">
         <h4>WŁOSKI</h4>
@@ -68,7 +69,7 @@
        <img class="flag" src="img/flaga-it.png" />
       </div>
     </div>
-
+-->
     <div class="col-md-2 text-center">
        <div class="col-md-12">
        <h4>HISZPAŃSKI</h4>
@@ -78,7 +79,7 @@
      </div>
 
     </div>
-
+<!--
     <div class="col-md-2 text-center">
        <div class="col-md-12">
         <h4>ROSYJSKI</h4>
@@ -96,7 +97,16 @@
       <img class="flag" src="img/flaga-ar.png" />
     </div> 
     </div>
-      
+-->
+    <div class="col-md-2 text-center">
+      <div class="col-md-12">
+        <h4>ANGIELSKI BIZNESOWY</h4>
+      </div>
+      <div class="col-md-12">
+        <img class="flag" src="img/flaga-en.png" />
+      </div>
+    </div>
+              
   </div>
 </div>  
       
@@ -140,8 +150,8 @@
        </div>
        <div class="col-md-9 point">
       kursy regularne<br/>
-      8 tygodni, 2 x 90min / tydzień<br/>
-      indywidualne 2 x 60min
+      5 tygodni, indywidualne i grupowe 3 x 90min / tydzień<br/>
+      angielski biznesowy 3 x 120min / tydzień
        </div>
        </div>
     </div> 
@@ -193,10 +203,10 @@
   </div>
 </div>
  
-<?php include 'footer.php'; ?>   
+<? include 'footer.php'; ?>   
 </div> 
   
-<?php include 'bottom-scripts.php'; ?>
+<? include 'bottom-scripts.php'; ?>
 
 
 </body>

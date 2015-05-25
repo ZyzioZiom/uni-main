@@ -232,6 +232,7 @@ th {
     background: #fff !important;
   }
   .navbar {
+    display: none;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -6343,13 +6344,13 @@ body {
   padding-top: 50px;
   margin-bottom: 0px;
   font-family: Museo300;
-  background: url(../img/bg4.jpg) #ffffff top center;
+  background: url(../img/bg5.jpg) #ffffff top center;
   background-size: cover;
   background-attachment: fixed;
 }
 @media (min-width: 768px) {
   body {
-    background: url(../img/bg4-sm.jpg) #ffffff top center;
+    background: url(../img/bg5-sm.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 100px;
@@ -6357,14 +6358,14 @@ body {
 }
 @media (min-width: 992px) {
   body {
-    background: url(../img/bg4-md.jpg) #ffffff top center;
+    background: url(../img/bg5-md.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
   }
 }
 @media (min-width: 1200px) {
   body {
-    background: url(../img/bg4-lg.jpg) #ffffff top center;
+    background: url(../img/bg5-lg.jpg) #ffffff top center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -6380,6 +6381,7 @@ body {
   margin: 0 auto;
 }
 #content {
+  display: none;
   min-height: 100%;
 }
 @media (min-width: 768px) {
