@@ -35,7 +35,7 @@ include "getauthenticate.php";
     <![endif]-->
   </head>
   <body>
-<?php include "top-body.php"; ?>
+<? include "top-body.php"; ?>
 
  
 
@@ -104,8 +104,9 @@ include "getauthenticate.php";
         <div class="choose-language">
         <input type="radio" id="languageEnglish" class="language-radio" name="language" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
           <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski</label>
-		<input type="radio" id="languageEnglish" class="language-radio" name="language" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
-          <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski biznesowy</label>
+
+        <input type="radio" id="languageFrench" class="language-radio" name="language" value="fr">
+          <label id="languageFrenchLabel" class="language-radio-label btn btn-default" for="languageFrench">Angielski biznesowy</label>
 <!--
         <input type="radio" id="languageGerman" class="language-radio" name="language" value="de">
           <label id="languageGermanLabel" class="language-radio-label btn btn-default" for="languageGerman">Niemiecki</label>
@@ -296,7 +297,7 @@ include "getauthenticate.php";
              <hr/>
              <div id="languageGroupChoose">
               
-             <?php include 'getgroups.php'; ?>
+             <? include 'getgroups.php'; ?>
              </div>
           </div>
           
@@ -317,9 +318,9 @@ include "getauthenticate.php";
      
 
 
- <?php include 'footer.php'; ?>  
+ <? include 'footer.php'; ?>  
     </div>
-<?php include 'bottom-scripts.php'; ?>
+<? include 'bottom-scripts.php'; ?>
     
 
 

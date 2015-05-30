@@ -1,5 +1,5 @@
 <?php include "setcookie.php"; ?>
-<?php 
+<? 
 // Load the cache process
 include("cache_harmonogram.php");
 ?>
@@ -51,13 +51,14 @@ catch (PodioError $e) {
   
 ?>
     
-<?php include "top-body.php"; ?>
+<? include "top-body.php"; ?>
 <div id="content">
   <div class="col-md-10 centered heading fontcolor">
       <div class="logo text-center"></div>
       <br/>
-    <h3 class="text-center">Warsztaty trwają od 16 marca przez 8 tygodni</h3>
-     <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
+    <h3 class="text-center">Warsztaty trwają od 6 lipca przez 5 tygodni</h3>
+    <h3 class="text-center">Grupa zostanie uruchomiona jeśli zapisze się na nią min. 6 osób
+    <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
 
   </div>
  
@@ -72,10 +73,11 @@ catch (PodioError $e) {
     <ul id="harmonogramChooseLanguageList" class="dropdown-menu" role="menu">
       <li id="harmonogramEn"><a href="#">Angielski</a></li>
       <li id="harmonogramFr"><a href="#">Francuski</a></li>
-      <li id="harmonogramIt"><a href="#">Włoski</a></li>
+      <li id="harmonogramIt"><a href="#">Angielski biznesowy</a></li>
       <li id="harmonogramEs"><a href="#">Hiszpański</a></li>
-      <li id="harmonogramRu"><a href="#">Rosyjski</a></li>
-      
+<!--      <li id="harmonogramRu"><a href="#">Rosyjski</a></li>
+      <li id="harmonogramRu"><a href="#">Włoski</a></li>
+-->     
     </ul>
   </div>
   </div>
@@ -158,12 +160,12 @@ if ($item["id"] == $weekday) {
           
 
 
-     <?php include 'footer.php'; ?>   
+     <? include 'footer.php'; ?>   
    
   
 
     
-<?php include 'bottom-scripts.php'; ?>
+<? include 'bottom-scripts.php'; ?>
   
 <script src="js/harmonogram-language.js"></script>
     

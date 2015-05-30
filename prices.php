@@ -1,4 +1,4 @@
- <?php include "setcookie.php"; ?>
+<?php include "setcookie.php"; ?>
 <? 
 // Load the cache process
 include("cache_prices.php");

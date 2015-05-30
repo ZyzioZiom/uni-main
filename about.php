@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-<?php include "top-body.php"; ?>
+<? include "top-body.php"; ?>
 <div id="content">
   <div class="col-md-8 centered heading about fontcolor">
       <div class="logo text-center"></div>
@@ -57,7 +57,7 @@
 
 <h3>Atrakcyjna forma</h3>
 
-<p>Opr&oacute;cz zajęć w grupie (minimum 4h tygodniowo) stawiamy na indywidualne konwersacje, gdyż jest to najszybsza metoda poznania języka w jego realnej (m&oacute;wionej i rozumianej) formie. Uczestnicy mają r&oacute;wnież dzięki indywidualnym konsultacjom przestrzeń do tego, by zadać pytania i wyjaśnić te kwestie, na kt&oacute;re zwykle nie starcza czasu podczas zajęć prowadzonych w tradycyjny spos&oacute;b.</p>
+<p>Opr&oacute;cz zajęć w grupie stawiamy na indywidualne konwersacje, gdyż jest to najszybsza metoda poznania języka w jego realnej (m&oacute;wionej i rozumianej) formie. Uczestnicy mają r&oacute;wnież dzięki indywidualnym konsultacjom przestrzeń do tego, by zadać pytania i wyjaśnić te kwestie, na kt&oacute;re zwykle nie starcza czasu podczas zajęć prowadzonych w tradycyjny spos&oacute;b.</p>
     
 <h3>Zajęcia w centrum miasta</h3>
     
@@ -104,11 +104,11 @@ Byli członkowie (Alumni) są <strong>liderami w swoich organizacjach i firmach<
  
   
  </div> 
-   <?php include 'footer.php'; ?>   
+   <? include 'footer.php'; ?>   
 
     
   
-<?php include 'bottom-scripts.php'; ?>
+<? include 'bottom-scripts.php'; ?>
     
 
     
