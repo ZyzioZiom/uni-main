@@ -105,8 +105,8 @@ include "getauthenticate.php";
         <input type="radio" id="languageEnglish" class="language-radio" name="language" value="en" required oninvalid="this.setCustomValidity('Musisz wybrać język')" >
           <label id="languageEnglishLabel" class="language-radio-label btn btn-default" for="languageEnglish">Angielski</label>
 
-        <input type="radio" id="languageEnglishBusiness" class="language-radio" name="language" value="fr">
-          <label id="languageEnglishBusinessLabel" class="language-radio-label btn btn-default" for="languageEnglishBusiness">Angielski biznesowy</label>
+        <input type="radio" id="languageFrench" class="language-radio" name="language" value="fr">
+          <label id="languageFrenchLabel" class="language-radio-label btn btn-default" for="languageFrench">Angielski biznesowy</label>
 <!--
         <input type="radio" id="languageGerman" class="language-radio" name="language" value="de">
           <label id="languageGermanLabel" class="language-radio-label btn btn-default" for="languageGerman">Niemiecki</label>
@@ -151,8 +151,8 @@ include "getauthenticate.php";
           <label id="" class="language-level-radio english-radio" for="englishC1">C1 Advanced</label><br/>  
         
         <input type="radio" id="englishInd" class="language-level-radio english-radio hidden" name="language-level" value="5" disabled>
-<!--          <label id="" class="language-level-radio english-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
--->          <p>W celu wpisania na zajęcia indywidualne prosimy o wiadomość e-mail.</p>
+          <label id="" class="language-level-radio english-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
         
         </div>
 
@@ -190,16 +190,16 @@ include "getauthenticate.php";
 
         <input type="radio" id="frenchB1" class="language-level-radio french-radio" name="language-level" value="14">
           <label id="" class="language-level-radio" for="frenchB1">B1 Intermediate</label><br/>
-<!--          
+          
         <input type="radio" id="frenchB2" class="language-level-radio french-radio" name="language-level" value="15">
           <label id="" class="language-level-radio" for="frenchB2">B2 Upper-intermediate</label><br/>  
 
         <input type="radio" id="frenchC1" class="language-level-radio french-radio" name="language-level" value="16">
           <label id="" class="language-level-radio" for="frenchC1">C1 Advanced</label><br/>  
--->
+
         <input type="radio" id="frenchInd" class="language-level-radio french-radio hidden" name="language-level" value="17" disabled>
-<!--          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
--->          <p>W celu wpisania na zajęcia indywidualne prosimy o wiadomość e-mail.</p>
+          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
         </div>   
             
 
@@ -225,7 +225,6 @@ include "getauthenticate.php";
 
         <input type="radio" id="italianInd" class="language-level-radio italian-radio" name="language-level" value="23">
           <label id="" class="language-level-radio" for="italianInd">Zajęcia indywidualne (wszystkie poziomy)</label><br/>
-
         </div>  
                  
        
@@ -266,16 +265,16 @@ include "getauthenticate.php";
 
         <input type="radio" id="spanishB1" class="language-level-radio spanish-radio" name="language-level" value="32">
           <label id="" class="language-level-radio" for="spanishB1">B1 Intermediate</label><br/>
-<!--          
+          
         <input type="radio" id="spanishB2" class="language-level-radio spanish-radio" name="language-level" value="33">
           <label id="" class="language-level-radio" for="spanishB2">B2 Upper-intermediate</label><br/>  
 
         <input type="radio" id="spanishC1" class="language-level-radio spanish-radio" name="language-level" value="34">
           <label id="" class="language-level-radio" for="spanishC1">C1 Advanced</label><br/>  
--->
+
         <input type="radio" id="spanishInd" class="language-level-radio spanish-radio hidden" name="language-level" value="35" disabled>
-<!--          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
--->          <p>W celu wpisania na zajęcia indywidualne prosimy o wiadomość e-mail.</p>
+          <label id="" class="language-level-radio">Zajęcia indywidualne - <span style="color: red;">brak miejsc</span></label><br/>       
+          <p>W celu wpisania na listę rezerwową prosimy o wiadomość e-mail.</p>
         
         </div>
              
