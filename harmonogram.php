@@ -57,7 +57,8 @@ catch (PodioError $e) {
       <div class="logo text-center"></div>
       <br/>
     <h3 class="text-center">Warsztaty trwają od 6 lipca przez 5 tygodni</h3>
-    <h3 class="text-center">Grupa zostanie uruchomiona jeśli zapisze się na nią min. 6 osób
+    <h3 class="text-center">Grupa zostanie uruchomiona jeśli zapisze się na nią min. 6 osób</h3>
+    <h3 class="text-center">Zapisy na angielski biznesowy i na zajęcia indywidualne mailowo: <a href="mailto:learnbyplay.krakow@gmail.com"><span class="fontcolor">learnbyplay.krakow@gmail.com</span></a></h3>
     <h3 class="text-center">Aktualny harmonogram zajęć:</h3>
 
   </div>
