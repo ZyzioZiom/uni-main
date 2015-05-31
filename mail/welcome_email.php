@@ -684,8 +684,8 @@
                         
                             Oto, co musisz wiedzieć, przed rozpoczęciem kursu:
 <ul>
-	<li>startujemy 16 marca</li>
-	<li>warsztaty trwają 8 tygodni</li>
+	<li>startujemy 6 lipca</li>
+	<li>warsztaty trwają 5 tygodni</li>
 	<li>harmonogram zajęć i aktualności znajdziesz na naszej stronie <a href="http://aiesec.pl/uni/" target="_blank">http://aiesec.pl/uni/</a></li>
   
 	<li>aby dokonać płatności za warsztaty, wyślij przelew w wysokości <strong>%amount% zł</strong> na konto:

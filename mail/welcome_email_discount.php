@@ -684,8 +684,8 @@
                         
                             Oto, co musisz wiedzieć, przed rozpoczęciem kursu:
 <ul>
-	<li>startujemy 16 marca</li>
-	<li>warsztaty trwają 8 tygodni</li>
+	<li>startujemy 6 lipca</li>
+	<li>warsztaty trwają 5 tygodni</li>
 	<li>harmonogram zajęć i aktualności znajdziesz na naszej stronie <a href="http://aiesec.pl/uni/" target="_blank">http://aiesec.pl/uni/</a></li>
 	<li><strong>aby potwierdzić swoje prawo do żniżki, w odpowiedzi na tą wiadomość wyślij nam dokument potwierdzający Twoją działalność w organizacji studenckiej, skan legitymacji studenckiej UEK lub certyfikat z ostatniego kursu AIESEC University</strong></li>
 	<li>aby dokonać płatności za warsztaty, po wysłaniu dokumentu potwierdzającego wyślij przelew w wysokości <strong>%amount% zł</strong> na konto:
