@@ -66,12 +66,12 @@ include("cache_prices.php");
       <td>699 zł</td>
     </tr>
     </table>
- <!--   
+    
      <table class="table">
     <tr>
       <td>
      <strong>Zniżki:</strong>
-10% dla studentów UEK , członków organizacji studenckich oraz osób które wcześniej uczestniczyły w warsztatach.
+10% dla studentów UEK oraz osób które wcześniej uczestniczyły w warsztatach.
       </td>
     </tr>
     <tr>
@@ -80,7 +80,7 @@ include("cache_prices.php");
       </td>
     </tr>
     </table>
--->
+
   </div>
   
       
